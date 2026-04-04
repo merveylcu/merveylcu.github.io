@@ -27,21 +27,21 @@ comments: false
   <div class="row">
     <div class="col-md-4 mb-4">
       <div class="fw-card">
-        <div class="fw-card-icon">📖</div>
+        <div class="fw-card-icon">{% include svg-icon.html name="book" size="22" %}</div>
         <h5>Daily learning</h5>
         <p>Set a daily goal and keep your English practice consistent with a lightweight routine.</p>
       </div>
     </div>
     <div class="col-md-4 mb-4">
       <div class="fw-card">
-        <div class="fw-card-icon fw-card-icon-mint">🔖</div>
+        <div class="fw-card-icon fw-card-icon-mint">{% include svg-icon.html name="bookmark" size="22" %}</div>
         <h5>Saved words</h5>
         <p>Keep important words close and return to them whenever you want a quick review session.</p>
       </div>
     </div>
     <div class="col-md-4 mb-4">
       <div class="fw-card">
-        <div class="fw-card-icon fw-card-icon-yellow">🔔</div>
+        <div class="fw-card-icon fw-card-icon-yellow">{% include svg-icon.html name="bell" size="22" %}</div>
         <h5>Reminders & widgets</h5>
         <p>Build a habit with daily reminder notifications and home screen widgets.</p>
       </div>

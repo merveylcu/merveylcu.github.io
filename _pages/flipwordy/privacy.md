@@ -3,6 +3,9 @@ layout: page
 title: Privacy Policy
 permalink: /flipwordy/privacy
 comments: false
+icon: shield
+icon_color: "#6C63FF"
+subtitle: How FlipWordy handles your data.
 ---
 
 This Privacy Policy explains what information FlipWordy collects, how it is used, and what choices you have when using the app.

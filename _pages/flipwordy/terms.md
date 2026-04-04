@@ -3,6 +3,9 @@ layout: page
 title: Terms of Use
 permalink: /flipwordy/terms
 comments: false
+icon: file-text
+icon_color: "#0E1A2B"
+subtitle: Rules for using FlipWordy.
 ---
 
 These Terms of Use govern your access to and use of the FlipWordy mobile application.

@@ -24,6 +24,11 @@
 body {
   background-color: var(--fw-bg) !important;
   color: var(--fw-text);
+  font-family: 'Work Sans', 'Segoe UI', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand, .nav-link {
+  font-family: 'Work Sans', 'Segoe UI', sans-serif !important;
 }
 
 a {
@@ -275,6 +280,86 @@ a {
     font-size: 0.88rem;
   }
 }
+
+// ─── Page header (legal pages) ──────────────────────────────
+.fw-page-header {
+  padding: 36px 0 32px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid var(--fw-border);
+
+  .fw-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.8rem;
+    color: var(--fw-muted);
+    margin-bottom: 28px;
+
+    a {
+      color: var(--fw-primary);
+      text-decoration: none;
+      font-weight: 500;
+      &:hover { text-decoration: underline; }
+    }
+
+    .fw-breadcrumb-sep {
+      color: var(--fw-border);
+      display: flex;
+      align-items: center;
+    }
+
+    span:last-child {
+      color: var(--fw-muted);
+      font-weight: 500;
+    }
+  }
+
+  .fw-page-header-inner {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .fw-page-header-icon {
+    width: 54px;
+    height: 54px;
+    border-radius: 14px;
+    background: var(--fw-primary-soft);
+    color: var(--fw-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    svg { display: block; }
+  }
+
+  .fw-page-title {
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: var(--fw-text);
+    margin: 0 0 6px;
+    line-height: 1.15;
+  }
+
+  .fw-page-subtitle {
+    color: var(--fw-muted);
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.55;
+    font-weight: 400;
+  }
+}
+
+// ─── Feature card SVG icon colors ───────────────────────────
+.fw-card-icon {
+  color: var(--fw-primary);
+  svg { display: block; }
+}
+
+.fw-card-icon-mint  { color: var(--fw-mint); }
+.fw-card-icon-yellow { color: #C47F00; }
 
 // ─── Legal pages (article-post / page layout) ───────────────
 .article-post {

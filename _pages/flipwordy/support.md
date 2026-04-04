@@ -3,6 +3,9 @@ layout: page
 title: Support
 permalink: /flipwordy/support
 comments: false
+icon: help-circle
+icon_color: "#35D0A5"
+subtitle: Need help with FlipWordy?
 ---
 
 For account, subscription, privacy, or technical questions, contact the support address below.

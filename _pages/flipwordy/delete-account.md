@@ -3,6 +3,9 @@ layout: page
 title: Delete Account
 permalink: /flipwordy/delete-account
 comments: false
+icon: trash
+icon_color: "#FF6B6B"
+subtitle: How to delete your FlipWordy account.
 ---
 
 If you want to delete your FlipWordy account and associated in-app records, you can do it directly from the app.
