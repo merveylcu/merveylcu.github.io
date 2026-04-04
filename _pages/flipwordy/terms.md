@@ -2,12 +2,16 @@
 layout: page
 title: Terms of Use
 title_tr: Kullanım Koşulları
+title_de: Nutzungsbedingungen
+title_fr: Conditions d'utilisation
 permalink: /flipwordy/terms
 comments: false
 icon: file-text
 icon_color: "#0E1A2B"
 subtitle: Rules for using FlipWordy.
 subtitle_tr: FlipWordy kullanım kuralları.
+subtitle_de: Regeln für die Nutzung von FlipWordy.
+subtitle_fr: Règles d'utilisation de FlipWordy.
 ---
 
 <p data-i18n="terms.intro">These Terms of Use govern your access to and use of the FlipWordy mobile application.</p>

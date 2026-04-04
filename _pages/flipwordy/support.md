@@ -2,12 +2,16 @@
 layout: page
 title: Support
 title_tr: Destek
+title_de: Support
+title_fr: Assistance
 permalink: /flipwordy/support
 comments: false
 icon: help-circle
 icon_color: "#35D0A5"
 subtitle: Need help with FlipWordy?
 subtitle_tr: FlipWordy ile ilgili yardıma mı ihtiyacınız var?
+subtitle_de: Brauchen Sie Hilfe mit FlipWordy?
+subtitle_fr: Besoin d'aide avec FlipWordy ?
 ---
 
 <p data-i18n="support.intro">For account, subscription, privacy, or technical questions, contact the support address below.</p>

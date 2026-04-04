@@ -28,31 +28,29 @@
   --fw-hero-background:  linear-gradient(135deg, #D8D5FF 0%, #C1BCFF 100%);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: dark;
-    --fw-primary:          #8B84FF;
-    --fw-primary-soft:     #231F48;
-    --fw-primary-light:    #4C4694;
-    --fw-mint:             #5BE0B6;
-    --fw-mint-soft:        #153C33;
-    --fw-yellow:           #FFD27A;
-    --fw-navy:             #E5EEF9;
-    --fw-bg:               #09111F;
-    --fw-surface:          #0F172A;
-    --fw-surface-soft:     #131E35;
-    --fw-text:             #E5EDF8;
-    --fw-muted:            #9AA8BC;
-    --fw-border:           #1E2B44;
-    --fw-shadow:           0 16px 40px rgba(0, 0, 0, 0.32);
-    --fw-navbar-bg:        rgba(9, 17, 31, 0.88);
-    --fw-hero-text:        #0F172A;
-    --fw-hero-muted:       rgba(15, 23, 42, 0.84);
-    --fw-hero-surface:     rgba(255, 255, 255, 0.34);
-    --fw-hero-border:      rgba(15, 23, 42, 0.12);
-    --fw-hero-shadow:      0 12px 28px rgba(0, 0, 0, 0.18);
-    --fw-hero-background:  linear-gradient(135deg, #D2CFFF 0%, #BBB4FF 100%);
-  }
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --fw-primary:          #8B84FF;
+  --fw-primary-soft:     #231F48;
+  --fw-primary-light:    #4C4694;
+  --fw-mint:             #5BE0B6;
+  --fw-mint-soft:        #153C33;
+  --fw-yellow:           #FFD27A;
+  --fw-navy:             #E5EEF9;
+  --fw-bg:               #09111F;
+  --fw-surface:          #0F172A;
+  --fw-surface-soft:     #131E35;
+  --fw-text:             #E5EDF8;
+  --fw-muted:            #9AA8BC;
+  --fw-border:           #1E2B44;
+  --fw-shadow:           0 16px 40px rgba(0, 0, 0, 0.32);
+  --fw-navbar-bg:        rgba(9, 17, 31, 0.88);
+  --fw-hero-text:        #0F172A;
+  --fw-hero-muted:       rgba(15, 23, 42, 0.84);
+  --fw-hero-surface:     rgba(255, 255, 255, 0.34);
+  --fw-hero-border:      rgba(15, 23, 42, 0.12);
+  --fw-hero-shadow:      0 12px 28px rgba(0, 0, 0, 0.18);
+  --fw-hero-background:  linear-gradient(135deg, #D2CFFF 0%, #BBB4FF 100%);
 }
 
 // ─── Global ─────────────────────────────────────────────────

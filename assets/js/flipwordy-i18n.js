@@ -7,7 +7,12 @@
   if (!pageUrl.startsWith("/flipwordy")) return;
 
   var locale = ((navigator.languages && navigator.languages[0]) || navigator.language || "en").toLowerCase();
-  var language = locale.indexOf("tr") === 0 ? "tr" : "en";
+  var language = locale.split("-")[0];
+  var supportedLanguages = ["tr", "de", "fr", "en"];
+
+  if (supportedLanguages.indexOf(language) === -1) {
+    language = "en";
+  }
 
   var translations = {
     tr: {
@@ -134,12 +139,277 @@
       "delete.section3": "Yardıma mı ihtiyacınız var?",
       "delete.help": "Uygulamaya erişemiyorsanız ve silme desteğine ihtiyaç duyuyorsanız şu adresten iletişime geçin: <a href=\"mailto:flipwordy@gmail.com\">flipwordy@gmail.com</a>.",
       "delete.updatedLabel": "Son güncelleme:"
+    },
+    de: {
+      "nav.home": "Startseite",
+      "nav.flipwordy": "FlipWordy",
+      "footer.privacy": "Datenschutz",
+      "footer.terms": "Bedingungen",
+      "footer.support": "Support",
+      "hero.eyebrow": "Englisch-Vokabel-App",
+      "hero.title": "Stärken Sie Ihren Wortschatz,<br>jeden Tag ein Stück mehr.",
+      "hero.lead": "FlipWordy macht das tägliche Worttraining einfach, fokussiert und nachhaltig. Verfolgen Sie Ihren Fortschritt, speichern Sie Wörter zum späteren Wiederholen und bauen Sie mit Erinnerungen und Homescreen-Widgets eine dauerhafte Gewohnheit auf.",
+      "hero.support": "Support erhalten",
+      "hero.privacy": "Datenschutzrichtlinie",
+      "hero.terms": "Nutzungsbedingungen",
+      "feature.learning.title": "Tägliches Lernen",
+      "feature.learning.body": "Legen Sie ein Tagesziel fest und halten Sie Ihre Englischpraxis mit einer leichten Routine konstant.",
+      "feature.saved.title": "Gespeicherte Wörter",
+      "feature.saved.body": "Behalten Sie wichtige Wörter im Blick und kehren Sie jederzeit für eine kurze Wiederholung zu ihnen zurück.",
+      "feature.reminders.title": "Erinnerungen & Widgets",
+      "feature.reminders.body": "Bauen Sie mit täglichen Erinnerungen und Homescreen-Widgets eine Lerngewohnheit auf.",
+      "offers.title": "Was FlipWordy bietet",
+      "offers.item1": "Tägliches Lernen englischer Wörter mit Fortschrittsverfolgung.",
+      "offers.item2": "Gespeicherte Wörter, damit Sie den für Sie wichtigsten Wortschatz leichter wiederholen können.",
+      "offers.item3": "Erinnerungsbenachrichtigungen zur Unterstützung einer regelmäßigen Lernroutine.",
+      "offers.item4": "Homescreen-Widgets für schnellen Zugriff auf Wörter im Laufe des Tages.",
+      "offers.item5": "Anpassbare Einstellungen wie Sprache sowie schwierigkeitsbezogene Optionen.",
+      "offers.item6": "Ein optionales Abo zum Entfernen von Werbung.",
+      "legal.title": "Rechtliches",
+      "legal.deleteAccount": "Konto löschen",
+      "support.intro": "Bei Fragen zu Konto, Abo, Datenschutz oder Technik kontaktieren Sie bitte die unten stehende Support-Adresse.",
+      "support.contactTitle": "Kontakt",
+      "support.emailLabel": "E-Mail:",
+      "support.responseTarget": "Empfohlene Antwortzeit: innerhalb von 3 bis 5 Werktagen.",
+      "support.includeTitle": "Was Ihre Nachricht enthalten sollte",
+      "support.include1": "Ihre App-Version und Ihr Gerätemodell.",
+      "support.include2": "Falls relevant, Ihre Anmeldemethode: Google, Apple oder Gast.",
+      "support.include3": "Eine kurze Beschreibung des Problems.",
+      "support.include4": "Screenshots, wenn das Problem visuell ist oder Abrechnung bzw. Konto betrifft.",
+      "support.commonTitle": "Häufige Themen",
+      "support.common1": "<strong>Abo-Verwaltung:</strong> Fragen zu Wiederherstellung und Kündigung werden über Google Play oder den App Store abgewickelt.",
+      "support.common2": "<strong>Benachrichtigungen:</strong> Probleme mit Benachrichtigungen und Erinnerungen können von den Systemeinstellungen Ihres Geräts abhängen.",
+      "support.common3": "<strong>Widget-Probleme:</strong> Nach einem App-Update muss das Widget möglicherweise entfernt und erneut hinzugefügt werden.",
+      "support.common4": "<strong>Kontolöschung:</strong> Kann in der App auf dem Profilbildschirm gestartet werden. Details finden Sie auf der Seite <a href=\"/flipwordy/delete-account\">Konto löschen</a>.",
+      "support.updatedLabel": "Zuletzt aktualisiert:",
+      "privacy.intro": "Diese Datenschutzrichtlinie erklärt, welche Informationen FlipWordy erhebt, wie sie verwendet werden und welche Wahlmöglichkeiten Sie bei der Nutzung der App haben.",
+      "privacy.section1": "1. Wer wir sind",
+      "privacy.who": "FlipWordy ist eine von Merve Pekyürek entwickelte App zum Lernen englischer Vokabeln.",
+      "privacy.contact": "Wenn Sie Fragen zu dieser Datenschutzrichtlinie haben, kontaktieren Sie uns unter: <a href=\"mailto:flipwordy@gmail.com\">flipwordy@gmail.com</a>.",
+      "privacy.section2": "2. Welche Informationen wir erfassen",
+      "privacy.collectIntro": "Je nachdem, wie Sie FlipWordy nutzen, können wir die folgenden Kategorien von Informationen erfassen oder verarbeiten:",
+      "privacy.collect1": "Kontoinformationen wie E-Mail-Adresse, Anzeigename und Anmeldeanbieter, wenn Sie sich mit Google oder Apple anmelden.",
+      "privacy.collect2": "Gast-Sitzungsdaten, wenn Sie ohne verknüpftes Konto fortfahren.",
+      "privacy.collect3": "Lerndaten wie täglicher Fortschritt, gespeicherte Wörter, Wortinteraktionsverlauf, gewählter Schwierigkeitsgrad, Spracheinstellungen und Tagesziel-Einstellungen.",
+      "privacy.collect4": "App-Einstellungen wie Benachrichtigungseinstellungen, Erinnerungszeit, Wochenend-Erinnerungen und widgetbezogene Anzeigeeinstellungen.",
+      "privacy.collect5": "Kauf- und Abostatus, der benötigt wird, um festzustellen, ob Werbung für ein monatliches oder jährliches Abo entfernt werden soll.",
+      "privacy.collect6": "Werbe- und Einwilligungsinformationen, die von Google AdMob und Google User Messaging Platform verwendet werden, einschließlich Anzeigenanfragen und Einwilligungsstatusdaten.",
+      "privacy.collect7": "Grundlegende technische Informationen, die von Drittanbieterdiensten automatisch erfasst werden können, wie Gerätekennungen, App-Instanzdaten, ungefähre Diagnosedaten und Interaktionssignale zur Ausspielung von Werbung oder zur Missbrauchsprävention.",
+      "privacy.section3": "3. Wie wir Informationen verwenden",
+      "privacy.use1": "Um Ihnen die Anmeldung zu ermöglichen und Ihre Sitzung aktiv zu halten.",
+      "privacy.use2": "Um das Vokabellernen zu personalisieren und Ihren Fortschritt sowie gespeicherte Inhalte zu behalten.",
+      "privacy.use3": "Um tägliche Erinnerungsbenachrichtigungen zu senden, wenn Sie diese aktivieren.",
+      "privacy.use4": "Um Homescreen-Widgets und Erinnerungsabläufe in der App zu unterstützen.",
+      "privacy.use5": "Um Werbung anzuzeigen, die Werbehäufigkeit zu begrenzen, den Einwilligungsstatus zu speichern und Ihr Abo zum Entfernen von Werbung zu berücksichtigen.",
+      "privacy.use6": "Um die Sicherheit der App zu gewährleisten, Probleme zu diagnostizieren und die Stabilität zu verbessern.",
+      "privacy.section4": "4. Drittanbieterdienste",
+      "privacy.thirdPartyIntro": "FlipWordy kann auf Drittanbieterdienste zurückgreifen, die Daten gemäß ihren eigenen Bedingungen und Datenschutzrichtlinien verarbeiten, darunter:",
+      "privacy.thirdParty4": "Google User Messaging Platform zur Einwilligungserfassung",
+      "privacy.thirdPartyBody": "Diese Dienste können Geräte-, Netzwerk-, Einwilligungs-, Kauf- und Nutzungsdaten erfassen, soweit dies für Authentifizierung, Werbung, Abrechnung, Betrugsprävention und verwandte Plattformfunktionen erforderlich ist.",
+      "privacy.section5": "5. Werbung und Abonnements",
+      "privacy.ads1": "FlipWordy kann Banner-, Interstitial- und Rewarded-Anzeigen anzeigen. Falls in Ihrer Region verfügbar, sehen Sie möglicherweise auch ein Einwilligungsformular zu bestimmten Arten personalisierter Werbung.",
+      "privacy.ads2": "Wenn Sie ein Abo zum „Entfernen von Werbung“ kaufen, speichert FlipWordy den dafür erforderlichen Abostatus, solange das Abo aktiv ist.",
+      "privacy.section6": "6. Benachrichtigungen und Widgets",
+      "privacy.notifications": "Wenn Sie Benachrichtigungen aktivieren, kann FlipWordy Erinnerungen anhand Ihrer gewählten Einstellungen planen. Wenn Sie ein FlipWordy-Widget hinzufügen, kann die App die lokale Widget-Konfiguration speichern und den Widget-Inhalt aktualisieren, um Wörter auf Ihrem Homescreen anzuzeigen.",
+      "privacy.section7": "7. Datenspeicherung",
+      "privacy.retention": "Wir speichern Informationen nur so lange, wie es für die Bereitstellung der App sowie zur Erfüllung rechtlicher oder betrieblicher Anforderungen notwendig ist. Lokal gespeicherte Lerndaten und Einstellungen können auf Ihrem Gerät verbleiben, bis Sie die App-Daten entfernen, sich abmelden oder Ihr Konto in der App löschen.",
+      "privacy.section8": "8. Ihre Wahlmöglichkeiten",
+      "privacy.choice1": "Sie können bestimmte Teile von FlipWordy als Gast nutzen.",
+      "privacy.choice2": "Sie können Benachrichtigungen in der App oder in den Geräteeinstellungen deaktivieren.",
+      "privacy.choice3": "Sie können Abonnements über Google Play oder den App Store verwalten oder kündigen.",
+      "privacy.choice4": "Sie können Ihr In-App-Konto und die dazugehörigen lokalen Datensätze im Profilbereich der App löschen.",
+      "privacy.section9": "9. Kinder",
+      "privacy.children": "FlipWordy richtet sich nicht an Kinder unter dem Alter, in dem sie nach geltendem Recht selbst in die Datenverarbeitung einwilligen dürfen. Wenn Sie glauben, dass ein Kind unzulässig personenbezogene Daten bereitgestellt hat, kontaktieren Sie uns bitte.",
+      "privacy.section10": "10. Änderungen dieser Richtlinie",
+      "privacy.changes": "Wir können diese Datenschutzrichtlinie von Zeit zu Zeit aktualisieren. Die neueste Version wird immer auf dieser Seite mit einem aktualisierten Gültigkeitsdatum veröffentlicht.",
+      "privacy.effectiveLabel": "Gültig ab:",
+      "terms.intro": "Diese Nutzungsbedingungen regeln Ihren Zugang zur FlipWordy-Mobilanwendung und deren Nutzung.",
+      "terms.section1": "1. Zustimmung",
+      "terms.acceptance": "Durch die Nutzung von FlipWordy stimmen Sie diesen Nutzungsbedingungen und der <a href=\"/flipwordy/privacy\">Datenschutzrichtlinie</a> zu. Wenn Sie nicht zustimmen, nutzen Sie die App bitte nicht.",
+      "terms.section2": "2. Berechtigung und Konten",
+      "terms.accounts": "Sie können FlipWordy nutzen, indem Sie sich mit einem unterstützten Anbieter anmelden oder als Gast fortfahren. Sie sind für die Richtigkeit der von Ihnen bereitgestellten Informationen verantwortlich und dafür, den Zugriff auf Ihr Gerät und Konto sicher zu halten.",
+      "terms.section3": "3. Lizenz",
+      "terms.license": "FlipWordy gewährt Ihnen eine begrenzte, nicht exklusive, nicht übertragbare und widerrufliche Lizenz zur persönlichen, nicht kommerziellen Nutzung der App gemäß diesen Bedingungen.",
+      "terms.section4": "4. Zulässige Nutzung",
+      "terms.use1": "Missbrauchen Sie die App oder zugehörige Dienste nicht, betreiben Sie kein Reverse Engineering, stören Sie diese nicht und versuchen Sie keinen unbefugten Zugriff.",
+      "terms.use2": "Nutzen Sie FlipWordy nicht in einer Weise, die gegen geltendes Recht oder Rechte Dritter verstößt.",
+      "terms.use3": "Greifen Sie nicht in Werbung, Abrechnung, Authentifizierung oder Sicherheitsfunktionen ein.",
+      "terms.section5": "5. Werbung und kostenpflichtige Funktionen",
+      "terms.ads1": "FlipWordy kann Banner-, Interstitial- und Rewarded-Anzeigen anzeigen. Die App kann außerdem monatliche oder jährliche Abos anbieten, die Werbung entfernen, solange sie aktiv sind.",
+      "terms.ads2": "Alle Käufe, Verlängerungen, Kündigungen, Erstattungen und abrechnungsbezogenen Bedingungen werden von Google Play oder dem App Store verwaltet und unterliegen deren jeweiligen Richtlinien.",
+      "terms.section6": "6. Verfügbarkeit und Änderungen",
+      "terms.availability": "Wir können Teile von FlipWordy jederzeit ändern, aussetzen oder einstellen, einschließlich Funktionen, Werbung, Lerninhalte oder Abonnementangebote. Wir garantieren nicht, dass die App jederzeit oder auf allen Geräten verfügbar ist.",
+      "terms.section7": "7. Kontolöschung und Sperrung",
+      "terms.deletion": "Sie können Ihr Konto innerhalb der App löschen, sofern diese Option in Ihrer aktuellen Version verfügbar ist. Wir können den Zugang auch aussetzen oder beenden, wenn dies zum Schutz der App, zur Erfüllung gesetzlicher Verpflichtungen oder zur Behandlung von Missbrauch erforderlich ist.",
+      "terms.section8": "8. Haftungsausschluss",
+      "terms.disclaimer": "FlipWordy wird im größtmöglichen gesetzlich zulässigen Umfang ohne jegliche Gewährleistung „wie besehen“ und „wie verfügbar“ bereitgestellt.",
+      "terms.section9": "9. Haftungsbeschränkung",
+      "terms.liability": "Soweit gesetzlich zulässig haften FlipWordy und seine Entwicklerin nicht für indirekte, zufällige, besondere, Folgeschäden oder Strafschadensersatz, die aus Ihrer Nutzung der App entstehen.",
+      "terms.section10": "10. Kontakt",
+      "terms.contact": "Bei rechtlichen oder Support-Fragen kontaktieren Sie uns unter: <a href=\"mailto:flipwordy@gmail.com\">flipwordy@gmail.com</a>.",
+      "terms.developerLabel": "Entwicklerin:",
+      "terms.developerName": "Merve Pekyürek",
+      "terms.effectiveLabel": "Gültig ab:",
+      "delete.intro": "Wenn Sie Ihr FlipWordy-Konto und die damit verbundenen In-App-Daten löschen möchten, können Sie dies direkt in der App tun.",
+      "delete.section1": "In der App löschen",
+      "delete.step1": "Öffnen Sie FlipWordy.",
+      "delete.step2": "Gehen Sie zum Bildschirm <strong>Profil</strong>.",
+      "delete.step3": "Wählen Sie <strong>Konto löschen</strong>.",
+      "delete.step4": "Bestätigen Sie die Löschanfrage.",
+      "delete.after": "Nach der Bestätigung löscht FlipWordy die lokal gespeicherten Datensätze, die mit Ihrem aktuellen App-Konto verknüpft sind, einschließlich Status gespeicherter Wörter, täglichem Fortschritt, Benutzereinstellungen und lokal gespeicherten Profildaten.",
+      "delete.section2": "Wichtige Hinweise",
+      "delete.note1": "Wenn Sie über Google Play oder den App Store abonniert haben, muss die Kündigung des Abos weiterhin dort verwaltet werden.",
+      "delete.note2": "Das Löschen Ihres FlipWordy-Kontos beendet ein aktives Abonnement nicht automatisch.",
+      "delete.note3": "Wenn Sie die App als Gast nutzen, werden beim Löschen des Kontos die lokalen App-Daten entfernt, die mit diesem Gastprofil auf Ihrem Gerät verknüpft sind.",
+      "delete.section3": "Brauchen Sie Hilfe?",
+      "delete.help": "Wenn Sie nicht auf die App zugreifen können und Hilfe bei der Löschung benötigen, kontaktieren Sie uns unter: <a href=\"mailto:flipwordy@gmail.com\">flipwordy@gmail.com</a>.",
+      "delete.updatedLabel": "Zuletzt aktualisiert:"
+    },
+    fr: {
+      "nav.home": "Accueil",
+      "nav.flipwordy": "FlipWordy",
+      "footer.privacy": "Confidentialité",
+      "footer.terms": "Conditions",
+      "footer.support": "Assistance",
+      "hero.eyebrow": "Application de vocabulaire anglais",
+      "hero.title": "Renforcez votre vocabulaire,<br>un peu plus chaque jour.",
+      "hero.lead": "FlipWordy rend la pratique quotidienne du vocabulaire simple, ciblée et durable. Suivez vos progrès, enregistrez les mots à revoir et créez une habitude régulière grâce aux rappels et aux widgets d'écran d'accueil.",
+      "hero.support": "Obtenir de l'aide",
+      "hero.privacy": "Politique de confidentialité",
+      "hero.terms": "Conditions d'utilisation",
+      "feature.learning.title": "Apprentissage quotidien",
+      "feature.learning.body": "Fixez un objectif quotidien et gardez une pratique régulière de l'anglais avec une routine légère.",
+      "feature.saved.title": "Mots enregistrés",
+      "feature.saved.body": "Gardez vos mots importants à portée de main et revenez-y quand vous voulez pour une révision rapide.",
+      "feature.reminders.title": "Rappels et widgets",
+      "feature.reminders.body": "Créez une habitude grâce aux rappels quotidiens et aux widgets d'écran d'accueil.",
+      "offers.title": "Ce que propose FlipWordy",
+      "offers.item1": "Apprentissage quotidien des mots anglais avec suivi de progression.",
+      "offers.item2": "Des mots enregistrés pour revoir plus facilement le vocabulaire qui compte le plus pour vous.",
+      "offers.item3": "Des notifications de rappel pour soutenir une habitude d'étude régulière.",
+      "offers.item4": "Des widgets d'écran d'accueil pour accéder rapidement aux mots pendant la journée.",
+      "offers.item5": "Des préférences ajustables comme la langue et les paramètres liés à la difficulté.",
+      "offers.item6": "Un abonnement optionnel pour supprimer les publicités.",
+      "legal.title": "Mentions légales",
+      "legal.deleteAccount": "Supprimer le compte",
+      "support.intro": "Pour toute question concernant le compte, l'abonnement, la confidentialité ou un problème technique, contactez l'adresse d'assistance ci-dessous.",
+      "support.contactTitle": "Contact",
+      "support.emailLabel": "E-mail :",
+      "support.responseTarget": "Délai de réponse recommandé : sous 3 à 5 jours ouvrés.",
+      "support.includeTitle": "À inclure dans votre message",
+      "support.include1": "Votre version de l'application et le modèle de votre appareil.",
+      "support.include2": "Votre méthode de connexion, si nécessaire : Google, Apple ou invité.",
+      "support.include3": "Une courte description du problème.",
+      "support.include4": "Des captures d'écran si le problème est visuel ou concerne la facturation ou le compte.",
+      "support.commonTitle": "Sujets fréquents",
+      "support.common1": "<strong>Gestion de l'abonnement :</strong> les questions de restauration et d'annulation sont gérées via Google Play ou l'App Store.",
+      "support.common2": "<strong>Notifications :</strong> les problèmes de notifications et de rappels peuvent dépendre des réglages système de votre appareil.",
+      "support.common3": "<strong>Problèmes de widget :</strong> il peut être nécessaire de supprimer puis de rajouter le widget après une mise à jour de l'application.",
+      "support.common4": "<strong>Suppression du compte :</strong> peut être lancée dans l'application depuis l'écran Profil. Consultez la page <a href=\"/flipwordy/delete-account\">Supprimer le compte</a> pour plus de détails.",
+      "support.updatedLabel": "Dernière mise à jour :",
+      "privacy.intro": "Cette politique de confidentialité explique quelles informations FlipWordy collecte, comment elles sont utilisées et quels choix vous avez lorsque vous utilisez l'application.",
+      "privacy.section1": "1. Qui sommes-nous",
+      "privacy.who": "FlipWordy est une application d'apprentissage du vocabulaire anglais développée par Merve Pekyürek.",
+      "privacy.contact": "Si vous avez des questions sur cette politique de confidentialité, contactez-nous à l'adresse suivante : <a href=\"mailto:flipwordy@gmail.com\">flipwordy@gmail.com</a>.",
+      "privacy.section2": "2. Informations que nous collectons",
+      "privacy.collectIntro": "Selon votre utilisation de FlipWordy, nous pouvons collecter ou traiter les catégories d'informations suivantes :",
+      "privacy.collect1": "Des informations de compte telles que l'adresse e-mail, le nom affiché et le fournisseur de connexion lorsque vous vous connectez avec Google ou Apple.",
+      "privacy.collect2": "Des données de session invité lorsque vous continuez sans créer de compte lié.",
+      "privacy.collect3": "Des données d'apprentissage telles que la progression quotidienne, les mots enregistrés, l'historique d'interaction avec les mots, le niveau de difficulté choisi, les préférences de langue et les objectifs quotidiens.",
+      "privacy.collect4": "Des préférences de l'application comme les réglages de notification, l'heure de rappel, les rappels du week-end et les préférences d'affichage liées aux widgets.",
+      "privacy.collect5": "L'état d'achat et d'abonnement nécessaire pour déterminer si les publicités doivent être supprimées pour un abonnement mensuel ou annuel.",
+      "privacy.collect6": "Des informations publicitaires et de consentement utilisées par Google AdMob et Google User Messaging Platform, y compris les demandes d'annonces et les données sur l'état du consentement.",
+      "privacy.collect7": "Des informations techniques de base pouvant être collectées automatiquement par des services tiers, telles que des identifiants d'appareil, des données d'instance de l'application, des diagnostics approximatifs et des signaux d'interaction nécessaires pour diffuser des annonces ou prévenir les abus.",
+      "privacy.section3": "3. Comment nous utilisons les informations",
+      "privacy.use1": "Pour vous permettre de vous connecter et de garder votre session active.",
+      "privacy.use2": "Pour personnaliser l'apprentissage du vocabulaire et mémoriser vos progrès ainsi que vos contenus enregistrés.",
+      "privacy.use3": "Pour envoyer des notifications de rappel quotidiennes si vous les activez.",
+      "privacy.use4": "Pour prendre en charge les widgets d'écran d'accueil et les flux de rappel dans l'application.",
+      "privacy.use5": "Pour afficher des publicités, limiter leur fréquence, enregistrer l'état du consentement publicitaire et appliquer votre abonnement de suppression des publicités.",
+      "privacy.use6": "Pour maintenir la sécurité de l'application, diagnostiquer les problèmes et améliorer la stabilité.",
+      "privacy.section4": "4. Services tiers",
+      "privacy.thirdPartyIntro": "FlipWordy peut s'appuyer sur des services tiers qui traitent des données selon leurs propres conditions et politiques de confidentialité, notamment :",
+      "privacy.thirdParty4": "Google User Messaging Platform pour la collecte du consentement",
+      "privacy.thirdPartyBody": "Ces services peuvent collecter des informations sur l'appareil, le réseau, le consentement, les achats et l'utilisation si cela est nécessaire pour fournir l'authentification, la publicité, la facturation, la prévention de la fraude et les fonctionnalités de plateforme associées.",
+      "privacy.section5": "5. Publicités et abonnements",
+      "privacy.ads1": "FlipWordy peut afficher des publicités bannières, interstitielles et récompensées. Si cela est disponible dans votre région, vous pouvez également voir un formulaire de consentement vous demandant si vous acceptez certains types de publicité personnalisée.",
+      "privacy.ads2": "Si vous achetez un abonnement « Supprimer les publicités », FlipWordy conserve l'état de l'abonnement nécessaire pour désactiver les publicités tant que l'abonnement est actif.",
+      "privacy.section6": "6. Notifications et widgets",
+      "privacy.notifications": "Si vous activez les notifications, FlipWordy peut programmer des rappels selon les paramètres choisis. Si vous ajoutez un widget FlipWordy, l'application peut stocker la configuration locale du widget et actualiser son contenu pour afficher des mots sur votre écran d'accueil.",
+      "privacy.section7": "7. Conservation des données",
+      "privacy.retention": "Nous conservons les informations uniquement aussi longtemps que nécessaire pour fournir l'application et respecter les exigences légales ou opérationnelles. Les données d'apprentissage et préférences stockées localement peuvent rester sur votre appareil jusqu'à ce que vous supprimiez les données de l'application, vous déconnectiez ou supprimiez votre compte dans l'application.",
+      "privacy.section8": "8. Vos choix",
+      "privacy.choice1": "Vous pouvez utiliser certaines parties de FlipWordy en tant qu'invité.",
+      "privacy.choice2": "Vous pouvez désactiver les notifications dans l'application ou dans les réglages de votre appareil.",
+      "privacy.choice3": "Vous pouvez gérer ou annuler les abonnements via Google Play ou l'App Store.",
+      "privacy.choice4": "Vous pouvez supprimer votre compte dans l'application et les enregistrements locaux associés depuis la section Profil de l'application.",
+      "privacy.section9": "9. Enfants",
+      "privacy.children": "FlipWordy n'est pas destiné aux enfants n'ayant pas l'âge requis par la loi applicable pour consentir eux-mêmes au traitement de leurs données. Si vous pensez qu'un enfant a fourni des données personnelles de manière inappropriée, contactez-nous afin que nous puissions examiner la situation.",
+      "privacy.section10": "10. Modifications de cette politique",
+      "privacy.changes": "Nous pouvons mettre à jour cette politique de confidentialité de temps à autre. La dernière version sera toujours publiée sur cette page avec une date d'entrée en vigueur mise à jour.",
+      "privacy.effectiveLabel": "Date d'entrée en vigueur :",
+      "terms.intro": "Ces conditions d'utilisation régissent votre accès et votre utilisation de l'application mobile FlipWordy.",
+      "terms.section1": "1. Acceptation",
+      "terms.acceptance": "En utilisant FlipWordy, vous acceptez ces conditions d'utilisation ainsi que la <a href=\"/flipwordy/privacy\">politique de confidentialité</a>. Si vous n'êtes pas d'accord, n'utilisez pas l'application.",
+      "terms.section2": "2. Éligibilité et comptes",
+      "terms.accounts": "Vous pouvez utiliser FlipWordy en vous connectant avec un fournisseur pris en charge ou en continuant en tant qu'invité. Vous êtes responsable de l'exactitude des informations que vous choisissez de fournir ainsi que de la sécurité de votre appareil et de votre compte.",
+      "terms.section3": "3. Licence",
+      "terms.license": "FlipWordy vous accorde une licence limitée, non exclusive, non transférable et révocable pour utiliser l'application à des fins personnelles et non commerciales conformément à ces conditions.",
+      "terms.section4": "4. Utilisation acceptable",
+      "terms.use1": "N'utilisez pas l'application ou les services associés de manière abusive, ne les rétroconcevez pas, ne les perturbez pas et ne tentez pas d'y accéder sans autorisation.",
+      "terms.use2": "N'utilisez pas FlipWordy d'une manière qui viole la loi applicable ou les droits de tiers.",
+      "terms.use3": "N'interférez pas avec les publicités, la facturation, l'authentification ou les fonctionnalités de sécurité.",
+      "terms.section5": "5. Publicités et fonctionnalités payantes",
+      "terms.ads1": "FlipWordy peut afficher des publicités bannières, interstitielles et récompensées. L'application peut également proposer des abonnements mensuels ou annuels supprimant les publicités tant qu'ils sont actifs.",
+      "terms.ads2": "Tous les achats, renouvellements, annulations, remboursements et conditions liées à la facturation sont gérés par Google Play ou l'App Store et soumis à leurs politiques respectives.",
+      "terms.section6": "6. Disponibilité et modifications",
+      "terms.availability": "Nous pouvons modifier, suspendre ou interrompre certaines parties de FlipWordy à tout moment, y compris les fonctionnalités, les publicités, le contenu d'apprentissage ou les offres d'abonnement. Nous ne garantissons pas que l'application sera disponible en permanence ou sur tous les appareils.",
+      "terms.section7": "7. Suppression du compte et résiliation",
+      "terms.deletion": "Vous pouvez supprimer votre compte depuis l'application si cette option est disponible dans votre version actuelle. Nous pouvons également suspendre ou résilier l'accès si nécessaire pour protéger l'application, respecter des obligations légales ou traiter un usage abusif.",
+      "terms.section8": "8. Clause de non-responsabilité",
+      "terms.disclaimer": "FlipWordy est fourni « en l'état » et « selon disponibilité », sans garantie d'aucune sorte, dans la mesure maximale permise par la loi.",
+      "terms.section9": "9. Limitation de responsabilité",
+      "terms.liability": "Dans la mesure maximale permise par la loi, FlipWordy et sa développeuse ne pourront être tenus responsables des dommages indirects, accessoires, spéciaux, consécutifs ou punitifs résultant de votre utilisation de l'application.",
+      "terms.section10": "10. Contact",
+      "terms.contact": "Pour toute question juridique ou d'assistance, contactez : <a href=\"mailto:flipwordy@gmail.com\">flipwordy@gmail.com</a>.",
+      "terms.developerLabel": "Développeuse :",
+      "terms.developerName": "Merve Pekyürek",
+      "terms.effectiveLabel": "Date d'entrée en vigueur :",
+      "delete.intro": "Si vous souhaitez supprimer votre compte FlipWordy et les enregistrements associés dans l'application, vous pouvez le faire directement depuis l'application.",
+      "delete.section1": "Supprimer depuis l'application",
+      "delete.step1": "Ouvrez FlipWordy.",
+      "delete.step2": "Accédez à l'écran <strong>Profil</strong>.",
+      "delete.step3": "Sélectionnez <strong>Supprimer le compte</strong>.",
+      "delete.step4": "Confirmez la demande de suppression.",
+      "delete.after": "Après confirmation, FlipWordy supprime les enregistrements stockés localement liés à votre compte actuel dans l'application, notamment l'état des mots enregistrés, la progression quotidienne, les préférences utilisateur et les données de profil locales stockées par l'application.",
+      "delete.section2": "Remarques importantes",
+      "delete.note1": "Si vous vous êtes abonné via Google Play ou l'App Store, l'annulation de l'abonnement doit toujours être gérée sur cette plateforme.",
+      "delete.note2": "La suppression de votre compte FlipWordy n'annule pas automatiquement un abonnement actif.",
+      "delete.note3": "Si vous utilisez l'application en tant qu'invité, la suppression du compte efface les enregistrements locaux associés à ce profil invité sur votre appareil.",
+      "delete.section3": "Besoin d'aide ?",
+      "delete.help": "Si vous ne pouvez pas accéder à l'application et avez besoin d'aide pour la suppression, contactez : <a href=\"mailto:flipwordy@gmail.com\">flipwordy@gmail.com</a>.",
+      "delete.updatedLabel": "Dernière mise à jour :"
     }
   };
 
   function translate(key) {
-    if (language === "tr" && translations.tr[key]) return translations.tr[key];
+    if (language === "en") return null;
+    if (translations[language] && translations[language][key]) return translations[language][key];
     return null;
+  }
+
+  function getLocalizedPageTitle() {
+    if (language === "tr") return body.dataset.pageTitleTr;
+    if (language === "de") return body.dataset.pageTitleDe;
+    if (language === "fr") return body.dataset.pageTitleFr;
+    return body.dataset.pageTitle;
+  }
+
+  function getLocalizedPageSubtitle(element) {
+    if (language === "tr") return element.getAttribute("data-i18n-page-subtitle-tr");
+    if (language === "de") return element.getAttribute("data-i18n-page-subtitle-de");
+    if (language === "fr") return element.getAttribute("data-i18n-page-subtitle-fr");
+    return element.getAttribute("data-i18n-page-subtitle");
   }
 
   document.documentElement.lang = language;
@@ -155,16 +425,16 @@
   });
 
   document.querySelectorAll("[data-i18n-page-title]").forEach(function (element) {
-    var value = language === "tr" ? body.dataset.pageTitleTr : body.dataset.pageTitle;
+    var value = getLocalizedPageTitle();
     if (value) element.textContent = value;
   });
 
   document.querySelectorAll("[data-i18n-page-subtitle]").forEach(function (element) {
-    var value = language === "tr" ? element.getAttribute("data-i18n-page-subtitle-tr") : element.getAttribute("data-i18n-page-subtitle");
+    var value = getLocalizedPageSubtitle(element);
     if (value) element.textContent = value;
   });
 
-  var pageTitle = language === "tr" ? body.dataset.pageTitleTr : body.dataset.pageTitle;
+  var pageTitle = getLocalizedPageTitle();
   var siteName = body.dataset.siteName || "";
   if (pageTitle && siteName) {
     document.title = pageTitle + " | " + siteName;

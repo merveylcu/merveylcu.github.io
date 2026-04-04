@@ -2,12 +2,16 @@
 layout: page
 title: Delete Account
 title_tr: Hesabı Sil
+title_de: Konto löschen
+title_fr: Supprimer le compte
 permalink: /flipwordy/delete-account
 comments: false
 icon: trash
 icon_color: "#FF6B6B"
 subtitle: How to delete your FlipWordy account.
 subtitle_tr: FlipWordy hesabınızı nasıl silebilirsiniz.
+subtitle_de: So löschen Sie Ihr FlipWordy-Konto.
+subtitle_fr: Comment supprimer votre compte FlipWordy.
 ---
 
 <p data-i18n="delete.intro">If you want to delete your FlipWordy account and associated in-app records, you can do it directly from the app.</p>

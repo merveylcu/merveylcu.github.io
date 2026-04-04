@@ -2,6 +2,8 @@
 layout: page
 title: FlipWordy
 title_tr: FlipWordy
+title_de: FlipWordy
+title_fr: FlipWordy
 permalink: /flipwordy/
 comments: false
 ---

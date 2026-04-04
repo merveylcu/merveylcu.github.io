@@ -2,12 +2,16 @@
 layout: page
 title: Privacy Policy
 title_tr: Gizlilik Politikası
+title_de: Datenschutzrichtlinie
+title_fr: Politique de confidentialité
 permalink: /flipwordy/privacy
 comments: false
 icon: shield
 icon_color: "#6C63FF"
 subtitle: How FlipWordy handles your data.
 subtitle_tr: FlipWordy verilerinizi nasıl işler.
+subtitle_de: So verarbeitet FlipWordy Ihre Daten.
+subtitle_fr: Comment FlipWordy traite vos données.
 ---
 
 <p data-i18n="privacy.intro">This Privacy Policy explains what information FlipWordy collects, how it is used, and what choices you have when using the app.</p>
