@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Support
-permalink: /support
+permalink: /flipwordy/support
 comments: false
 ---
 
@@ -25,6 +25,6 @@ Recommended response target: within 3 to 5 business days.
 - **Subscription management:** Restore and cancellation questions are handled through Google Play or the App Store.
 - **Notifications:** Notification and reminder issues may depend on device-level notification settings.
 - **Widget issues:** May require removing and re-adding the widget after an app update.
-- **Account deletion:** Can be initiated inside the app from the Profile screen. See the [Delete Account](/delete-account) page for details.
+- **Account deletion:** Can be initiated inside the app from the Profile screen. See the [Delete Account](/flipwordy/delete-account) page for details.
 
 **Last updated:** April 4, 2026

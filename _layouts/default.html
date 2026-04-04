@@ -72,20 +72,12 @@ ga('send', 'pageview');
                 <a class="nav-link" href="{{ site.baseurl }}/">Home</a>
                 </li>
 
+                {% if page.url contains "/flipwordy" %}
+                <li class="nav-item active">
+                {% else %}
                 <li class="nav-item">
-                <a class="nav-link" href="{{ site.baseurl }}/privacy">Privacy Policy</a>
-                </li>
-
-                <li class="nav-item">
-                <a class="nav-link" href="{{ site.baseurl }}/terms">Terms of Use</a>
-                </li>
-
-                <li class="nav-item">
-                <a class="nav-link" href="{{ site.baseurl }}/support">Support</a>
-                </li>
-
-                <li class="nav-item">
-                <a class="nav-link" href="{{ site.baseurl }}/delete-account">Delete Account</a>
+                {% endif %}
+                <a class="nav-link" href="{{ site.baseurl }}/flipwordy/">FlipWordy</a>
                 </li>
 
             </ul>
@@ -120,9 +112,9 @@ ga('send', 'pageview');
                 Copyright © {{ site.time | date: "%Y" }} {{ site.name }}
             </div>
             <div class="col-md-6 col-sm-6 text-center text-lg-right">
-                <a href="{{ site.baseurl }}/privacy">Privacy</a> &nbsp;·&nbsp;
-                <a href="{{ site.baseurl }}/terms">Terms</a> &nbsp;·&nbsp;
-                <a href="{{ site.baseurl }}/support">Support</a>
+                <a href="{{ site.baseurl }}/flipwordy/privacy">Privacy</a> &nbsp;·&nbsp;
+                <a href="{{ site.baseurl }}/flipwordy/terms">Terms</a> &nbsp;·&nbsp;
+                <a href="{{ site.baseurl }}/flipwordy/support">Support</a>
             </div>
         </div>
     </div>

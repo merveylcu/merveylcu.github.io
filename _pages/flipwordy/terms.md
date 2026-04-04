@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Terms of Use
-permalink: /terms
+permalink: /flipwordy/terms
 comments: false
 ---
 

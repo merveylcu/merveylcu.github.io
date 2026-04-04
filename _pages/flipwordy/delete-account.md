@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Delete Account
-permalink: /delete-account
+permalink: /flipwordy/delete-account
 comments: false
 ---
 
