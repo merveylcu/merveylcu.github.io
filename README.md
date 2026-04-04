@@ -1,6 +1,6 @@
 # merveylcu.github.io
 
-FlipWordy için tanıtım ve yasal sayfaları barındıran GitHub Pages sitesi.
+Merveylcu GitHub Pages sitesi. Ana sayfa kişisel profil alanını, `FlipWordy` bölümü ise ürün tanıtımı ve yasal/support sayfalarını içerir.
 
 **Site:** https://merveylcu.github.io
 
@@ -9,10 +9,18 @@ FlipWordy için tanıtım ve yasal sayfaları barındıran GitHub Pages sitesi.
 | Sayfa | URL |
 |-------|-----|
 | Ana sayfa | `/` |
-| Privacy Policy | `/privacy` |
-| Terms of Use | `/terms` |
-| Support | `/support` |
-| Delete Account | `/delete-account` |
+| FlipWordy | `/flipwordy/` |
+| Privacy Policy | `/flipwordy/privacy` |
+| Terms of Use | `/flipwordy/terms` |
+| Support | `/flipwordy/support` |
+| Delete Account | `/flipwordy/delete-account` |
+
+## Özellikler
+
+- FlipWordy için ürün tanıtım sayfası
+- Privacy, Terms, Support ve Delete Account sayfaları
+- Cihaz diline göre `en`, `tr`, `de`, `fr` içerik desteği
+- Light tema varsayılanı, cihaz dark moddaysa dark görünüm
 
 ## Kurulum
 
@@ -20,6 +28,8 @@ FlipWordy için tanıtım ve yasal sayfaları barındıran GitHub Pages sitesi.
 bundle install
 bundle exec jekyll serve
 ```
+
+Yerel geliştirmede ana sayfa: `http://localhost:4000/`
 
 ## Tema
 
