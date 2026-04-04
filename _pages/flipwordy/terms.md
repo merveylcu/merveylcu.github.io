@@ -7,7 +7,7 @@ title_fr: Conditions d'utilisation
 permalink: /flipwordy/terms
 comments: false
 icon: file-text
-icon_color: "#0E1A2B"
+icon_color: "#6C63FF"
 subtitle: Rules for using FlipWordy.
 subtitle_tr: FlipWordy kullanım kuralları.
 subtitle_de: Regeln für die Nutzung von FlipWordy.
