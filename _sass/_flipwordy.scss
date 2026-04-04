@@ -1,0 +1,345 @@
+// ============================================================
+// FlipWordy — design system
+// ============================================================
+
+:root {
+  --fw-primary:       #6C63FF;
+  --fw-primary-soft:  #E9E8FF;
+  --fw-primary-light: #C9C6FF;
+  --fw-mint:          #35D0A5;
+  --fw-mint-soft:     #DFF7EF;
+  --fw-yellow:        #FFC857;
+  --fw-navy:          #0E1A2B;
+  --fw-bg:            #F6F7FB;
+  --fw-surface:       #FFFFFF;
+  --fw-surface-soft:  #F1F3FA;
+  --fw-text:          #1F2937;
+  --fw-muted:         #6B7280;
+  --fw-border:        #E4E7F2;
+  --fw-shadow:        0 4px 24px rgba(108, 99, 255, 0.10);
+  --fw-radius:        16px;
+}
+
+// ─── Global ─────────────────────────────────────────────────
+body {
+  background-color: var(--fw-bg) !important;
+  color: var(--fw-text);
+}
+
+a {
+  color: var(--fw-primary);
+  &:hover { color: #5249cc; text-decoration: none; }
+}
+
+// ─── Navbar ─────────────────────────────────────────────────
+.mediumnavigation {
+  border-bottom: 1px solid var(--fw-border) !important;
+  box-shadow: 0 1px 12px rgba(108, 99, 255, 0.07) !important;
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 800;
+    font-size: 1.15rem;
+    color: var(--fw-text) !important;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+
+    img {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+  }
+
+  .nav-link {
+    color: var(--fw-muted) !important;
+    font-weight: 500;
+    font-size: 0.875rem;
+    transition: color 0.15s;
+    &:hover { color: var(--fw-primary) !important; }
+  }
+
+  .nav-item.active .nav-link {
+    color: var(--fw-primary) !important;
+    font-weight: 600;
+  }
+}
+
+// ─── Hide default site heading ───────────────────────────────
+.mainheading { display: none; }
+
+// ─── Hero ───────────────────────────────────────────────────
+.fw-hero {
+  background: linear-gradient(135deg, #6C63FF 0%, #0E1A2B 100%);
+  border-radius: 24px;
+  padding: 56px 48px;
+  color: #fff;
+  margin-bottom: 24px;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -80px; right: -80px;
+    width: 320px; height: 320px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.04);
+    pointer-events: none;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -100px; left: -50px;
+    width: 280px; height: 280px;
+    border-radius: 50%;
+    background: rgba(53, 208, 165, 0.10);
+    pointer-events: none;
+  }
+
+  .fw-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 14px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.13);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.9);
+
+    img {
+      width: 20px;
+      height: 20px;
+      border-radius: 5px;
+    }
+  }
+
+  h1 {
+    font-size: clamp(1.9rem, 5vw, 3rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+    color: #fff;
+    margin-bottom: 16px;
+    max-width: 18ch;
+  }
+
+  .fw-hero-lead {
+    font-size: 1.05rem;
+    opacity: 0.82;
+    max-width: 52ch;
+    line-height: 1.65;
+    margin-bottom: 32px;
+  }
+
+  .fw-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
+
+// ─── Buttons ────────────────────────────────────────────────
+.fw-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  background: #fff;
+  color: var(--fw-primary) !important;
+  border: none;
+  border-radius: 999px;
+  font-weight: 700;
+  padding: 12px 28px;
+  font-size: 0.92rem;
+  text-decoration: none !important;
+  transition: all 0.15s;
+  position: relative;
+  z-index: 1;
+
+  &:hover {
+    background: var(--fw-primary-soft);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(108, 99, 255, 0.25);
+  }
+}
+
+.fw-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.88) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.30);
+  border-radius: 999px;
+  font-weight: 600;
+  padding: 12px 28px;
+  font-size: 0.92rem;
+  text-decoration: none !important;
+  transition: all 0.15s;
+  position: relative;
+  z-index: 1;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.10);
+    border-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+// ─── Feature cards ──────────────────────────────────────────
+.fw-features { margin-bottom: 8px; }
+
+.fw-card {
+  background: var(--fw-surface);
+  border: 1px solid var(--fw-border);
+  border-radius: var(--fw-radius);
+  padding: 28px;
+  height: 100%;
+  transition: box-shadow 0.2s, transform 0.2s;
+
+  &:hover {
+    box-shadow: var(--fw-shadow);
+    transform: translateY(-2px);
+  }
+
+  .fw-card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: var(--fw-primary-soft);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.35rem;
+    margin-bottom: 16px;
+  }
+
+  .fw-card-icon-mint  { background: var(--fw-mint-soft); }
+  .fw-card-icon-yellow { background: #FFF3D5; }
+
+  h5 {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--fw-text);
+    margin-bottom: 8px;
+  }
+
+  p {
+    color: var(--fw-muted);
+    font-size: 0.92rem;
+    margin-bottom: 0;
+    line-height: 1.6;
+  }
+}
+
+// ─── Content cards ──────────────────────────────────────────
+.fw-content-card {
+  background: var(--fw-surface);
+  border: 1px solid var(--fw-border);
+  border-radius: var(--fw-radius);
+  padding: 32px;
+  margin-bottom: 20px;
+
+  h4 {
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--fw-text);
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--fw-primary-soft);
+  }
+
+  ul {
+    padding-left: 20px;
+    li {
+      color: var(--fw-text);
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+  }
+
+  p {
+    color: var(--fw-text);
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .text-muted {
+    color: var(--fw-muted) !important;
+    font-size: 0.88rem;
+  }
+}
+
+// ─── Legal pages (article-post / page layout) ───────────────
+.article-post {
+  max-width: 720px;
+  margin: 0 auto;
+
+  h2 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--fw-text);
+    margin-top: 36px;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--fw-primary-soft);
+  }
+
+  p, li {
+    color: var(--fw-text);
+    font-size: 0.95rem;
+    line-height: 1.75;
+  }
+
+  ul { padding-left: 20px; }
+  li { margin-bottom: 6px; }
+
+  a { color: var(--fw-primary); }
+
+  strong { color: var(--fw-text); }
+}
+
+// ─── Section title (page.html uses this) ────────────────────
+.section-title h2 span {
+  background: var(--fw-primary-soft) !important;
+  color: var(--fw-primary) !important;
+  border-radius: 8px;
+  padding: 2px 12px;
+}
+
+// ─── Footer ─────────────────────────────────────────────────
+.footer {
+  border-top: 1px solid var(--fw-border) !important;
+  color: var(--fw-muted);
+  font-size: 0.875rem;
+  background: var(--fw-surface) !important;
+  padding: 20px 0;
+
+  a {
+    color: var(--fw-muted);
+    &:hover { color: var(--fw-primary); }
+  }
+}
+
+// ─── Responsive ─────────────────────────────────────────────
+@media (max-width: 768px) {
+  .fw-hero {
+    padding: 36px 24px;
+    border-radius: 18px;
+    h1 { font-size: 1.75rem; }
+  }
+
+  .fw-btn-primary,
+  .fw-btn-outline {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .fw-card { margin-bottom: 16px; }
+}
