@@ -14,8 +14,8 @@ permalink: /:title/
 # Authors
 authors:
   merve:
-    name: Merve Pekyurek
-    display_name: Merve Pekyurek
+    name: Merve Pekyürek
+    display_name: Merve Pekyürek
     email: flipwordy@gmail.com
     description: "Developer of FlipWordy, an English vocabulary learning app."
 

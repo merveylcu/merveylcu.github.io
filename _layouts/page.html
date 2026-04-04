@@ -8,15 +8,15 @@ layout: default
 
 <div class="fw-page-header">
   <nav class="fw-breadcrumb" aria-label="breadcrumb">
-    <a href="/">Home</a>
+    <a href="/" data-i18n="nav.home">Home</a>
     <span class="fw-breadcrumb-sep">
       <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
     </span>
-    <a href="/flipwordy/">FlipWordy</a>
+    <a href="/flipwordy/" data-i18n="nav.flipwordy">FlipWordy</a>
     <span class="fw-breadcrumb-sep">
       <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
     </span>
-    <span>{{ page.title }}</span>
+    <span data-i18n-page-title>{{ page.title }}</span>
   </nav>
 
   <div class="fw-page-header-inner">
@@ -24,8 +24,8 @@ layout: default
       {% include svg-icon.html name=page.icon size="24" %}
     </div>
     <div>
-      <h1 class="fw-page-title">{{ page.title }}</h1>
-      {% if page.subtitle %}<p class="fw-page-subtitle">{{ page.subtitle }}</p>{% endif %}
+      <h1 class="fw-page-title" data-i18n-page-title>{{ page.title }}</h1>
+      {% if page.subtitle %}<p class="fw-page-subtitle" data-i18n-page-subtitle="{{ page.subtitle | escape }}" data-i18n-page-subtitle-tr="{{ page.subtitle_tr | default: page.subtitle | escape }}">{{ page.subtitle }}</p>{% endif %}
     </div>
   </div>
 </div>

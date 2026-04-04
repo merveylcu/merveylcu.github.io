@@ -3,21 +3,56 @@
 // ============================================================
 
 :root {
-  --fw-primary:       #6C63FF;
-  --fw-primary-soft:  #E9E8FF;
-  --fw-primary-light: #C9C6FF;
-  --fw-mint:          #35D0A5;
-  --fw-mint-soft:     #DFF7EF;
-  --fw-yellow:        #FFC857;
-  --fw-navy:          #0E1A2B;
-  --fw-bg:            #F6F7FB;
-  --fw-surface:       #FFFFFF;
-  --fw-surface-soft:  #F1F3FA;
-  --fw-text:          #1F2937;
-  --fw-muted:         #6B7280;
-  --fw-border:        #E4E7F2;
-  --fw-shadow:        0 4px 24px rgba(108, 99, 255, 0.10);
-  --fw-radius:        16px;
+  color-scheme: light;
+  --fw-primary:          #6C63FF;
+  --fw-primary-soft:     #E9E8FF;
+  --fw-primary-light:    #C9C6FF;
+  --fw-mint:             #35D0A5;
+  --fw-mint-soft:        #DFF7EF;
+  --fw-yellow:           #FFC857;
+  --fw-navy:             #0E1A2B;
+  --fw-bg:               #F6F7FB;
+  --fw-surface:          #FFFFFF;
+  --fw-surface-soft:     #F1F3FA;
+  --fw-text:             #1F2937;
+  --fw-muted:            #6B7280;
+  --fw-border:           #E4E7F2;
+  --fw-shadow:           0 10px 30px rgba(15, 23, 42, 0.08);
+  --fw-radius:           16px;
+  --fw-navbar-bg:        rgba(255, 255, 255, 0.92);
+  --fw-hero-text:        #F8FAFC;
+  --fw-hero-muted:       rgba(248, 250, 252, 0.88);
+  --fw-hero-surface:     rgba(255, 255, 255, 0.08);
+  --fw-hero-border:      rgba(255, 255, 255, 0.14);
+  --fw-hero-shadow:      0 20px 45px rgba(15, 23, 42, 0.24);
+  --fw-hero-background:  radial-gradient(circle at top right, rgba(96, 165, 250, 0.32), transparent 30%), linear-gradient(135deg, #4F46E5 0%, #0F172A 88%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --fw-primary:          #8B84FF;
+    --fw-primary-soft:     #231F48;
+    --fw-primary-light:    #4C4694;
+    --fw-mint:             #5BE0B6;
+    --fw-mint-soft:        #153C33;
+    --fw-yellow:           #FFD27A;
+    --fw-navy:             #E5EEF9;
+    --fw-bg:               #09111F;
+    --fw-surface:          #0F172A;
+    --fw-surface-soft:     #131E35;
+    --fw-text:             #E5EDF8;
+    --fw-muted:            #9AA8BC;
+    --fw-border:           #1E2B44;
+    --fw-shadow:           0 16px 40px rgba(0, 0, 0, 0.32);
+    --fw-navbar-bg:        rgba(9, 17, 31, 0.88);
+    --fw-hero-text:        #F8FAFC;
+    --fw-hero-muted:       rgba(226, 232, 240, 0.92);
+    --fw-hero-surface:     rgba(15, 23, 42, 0.28);
+    --fw-hero-border:      rgba(148, 163, 184, 0.18);
+    --fw-hero-shadow:      0 24px 60px rgba(0, 0, 0, 0.4);
+    --fw-hero-background:  radial-gradient(circle at top right, rgba(52, 211, 153, 0.16), transparent 28%), linear-gradient(135deg, #111C38 0%, #050914 100%);
+  }
 }
 
 // ─── Global ─────────────────────────────────────────────────
@@ -40,6 +75,8 @@ a {
 .mediumnavigation {
   border-bottom: 1px solid var(--fw-border) !important;
   box-shadow: 0 1px 12px rgba(108, 99, 255, 0.07) !important;
+  background: var(--fw-navbar-bg) !important;
+  backdrop-filter: blur(14px);
 
   .navbar-brand {
     display: flex;
@@ -78,13 +115,15 @@ a {
 
 // ─── Hero ───────────────────────────────────────────────────
 .fw-hero {
-  background: linear-gradient(135deg, #6C63FF 0%, #0E1A2B 100%);
+  background: var(--fw-hero-background);
   border-radius: 24px;
   padding: 56px 48px;
-  color: #fff;
+  color: var(--fw-hero-text);
   margin-bottom: 24px;
   position: relative;
   overflow: hidden;
+  box-shadow: var(--fw-hero-shadow);
+  border: 1px solid var(--fw-hero-border);
 
   &::before {
     content: '';
@@ -92,7 +131,7 @@ a {
     top: -80px; right: -80px;
     width: 320px; height: 320px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.04);
+    background: rgba(255, 255, 255, 0.06);
     pointer-events: none;
   }
 
@@ -102,7 +141,7 @@ a {
     bottom: -100px; left: -50px;
     width: 280px; height: 280px;
     border-radius: 50%;
-    background: rgba(53, 208, 165, 0.10);
+    background: rgba(53, 208, 165, 0.14);
     pointer-events: none;
   }
 
@@ -112,13 +151,14 @@ a {
     gap: 8px;
     padding: 5px 14px;
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.13);
+    background: var(--fw-hero-surface);
+    border: 1px solid var(--fw-hero-border);
     font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin-bottom: 20px;
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--fw-hero-muted);
 
     img {
       width: 20px;
@@ -132,17 +172,22 @@ a {
     font-weight: 800;
     letter-spacing: -0.03em;
     line-height: 1.15;
-    color: #fff;
+    color: var(--fw-hero-text);
     margin-bottom: 16px;
     max-width: 18ch;
+    text-wrap: balance;
   }
 
   .fw-hero-lead {
     font-size: 1.05rem;
-    opacity: 0.82;
-    max-width: 52ch;
+    color: var(--fw-hero-muted);
+    max-width: 58ch;
     line-height: 1.65;
     margin-bottom: 32px;
+    position: relative;
+    z-index: 1;
+    font-weight: 500;
+    text-wrap: pretty;
   }
 
   .fw-hero-actions {
@@ -178,9 +223,9 @@ a {
 .fw-btn-outline {
   display: inline-flex;
   align-items: center;
-  background: transparent;
-  color: rgba(255, 255, 255, 0.88) !important;
-  border: 1.5px solid rgba(255, 255, 255, 0.30);
+  background: var(--fw-hero-surface);
+  color: var(--fw-hero-text) !important;
+  border: 1.5px solid var(--fw-hero-border);
   border-radius: 999px;
   font-weight: 600;
   padding: 12px 28px;
@@ -191,8 +236,9 @@ a {
   z-index: 1;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.10);
-    border-color: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.16);
+    border-color: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 10px 22px rgba(15, 23, 42, 0.18);
   }
 }
 
@@ -318,6 +364,11 @@ a {
     display: flex;
     align-items: flex-start;
     gap: 18px;
+    padding: 28px;
+    border-radius: 22px;
+    background: linear-gradient(135deg, var(--fw-surface) 0%, var(--fw-surface-soft) 100%);
+    border: 1px solid var(--fw-border);
+    box-shadow: var(--fw-shadow);
   }
 
   .fw-page-header-icon {
@@ -568,6 +619,18 @@ a {
     padding: 36px 24px;
     border-radius: 18px;
     h1 { font-size: 1.75rem; }
+  }
+
+  .fw-page-header {
+    .fw-breadcrumb {
+      flex-wrap: wrap;
+      row-gap: 8px;
+    }
+
+    .fw-page-header-inner {
+      padding: 20px;
+      flex-direction: column;
+    }
   }
 
   .fw-btn-primary,

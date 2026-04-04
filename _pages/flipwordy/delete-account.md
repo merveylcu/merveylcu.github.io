@@ -1,32 +1,38 @@
 ---
 layout: page
 title: Delete Account
+title_tr: Hesabı Sil
 permalink: /flipwordy/delete-account
 comments: false
 icon: trash
 icon_color: "#FF6B6B"
 subtitle: How to delete your FlipWordy account.
+subtitle_tr: FlipWordy hesabınızı nasıl silebilirsiniz.
 ---
 
-If you want to delete your FlipWordy account and associated in-app records, you can do it directly from the app.
+<p data-i18n="delete.intro">If you want to delete your FlipWordy account and associated in-app records, you can do it directly from the app.</p>
 
-## Delete from the app
+<h2 data-i18n="delete.section1">Delete from the app</h2>
 
-1. Open FlipWordy.
-2. Go to the **Profile** screen.
-3. Select **Delete Account**.
-4. Confirm the deletion request.
+<ol>
+  <li data-i18n="delete.step1">Open FlipWordy.</li>
+  <li data-i18n-html="delete.step2">Go to the <strong>Profile</strong> screen.</li>
+  <li data-i18n-html="delete.step3">Select <strong>Delete Account</strong>.</li>
+  <li data-i18n="delete.step4">Confirm the deletion request.</li>
+</ol>
 
-After confirmation, FlipWordy deletes the locally stored records linked to your current app account, including saved word status, daily progress, user preferences, and local profile data stored by the app.
+<p data-i18n="delete.after">After confirmation, FlipWordy deletes the locally stored records linked to your current app account, including saved word status, daily progress, user preferences, and local profile data stored by the app.</p>
 
-## Important notes
+<h2 data-i18n="delete.section2">Important notes</h2>
 
-- If you subscribed through Google Play or the App Store, subscription cancellation must still be managed there.
-- Deleting your FlipWordy account does not automatically cancel an active subscription.
-- If you use the app as a guest, deleting the account removes the local app records associated with that guest profile on your device.
+<ul>
+  <li data-i18n="delete.note1">If you subscribed through Google Play or the App Store, subscription cancellation must still be managed there.</li>
+  <li data-i18n="delete.note2">Deleting your FlipWordy account does not automatically cancel an active subscription.</li>
+  <li data-i18n="delete.note3">If you use the app as a guest, deleting the account removes the local app records associated with that guest profile on your device.</li>
+</ul>
 
-## Need help?
+<h2 data-i18n="delete.section3">Need help?</h2>
 
-If you cannot access the app and need deletion assistance, contact: [flipwordy@gmail.com](mailto:flipwordy@gmail.com).
+<p data-i18n-html="delete.help">If you cannot access the app and need deletion assistance, contact: <a href="mailto:flipwordy@gmail.com">flipwordy@gmail.com</a>.</p>
 
-**Last updated:** April 4, 2026
+<p><strong data-i18n="delete.updatedLabel">Last updated:</strong> <span>April 4, 2026</span></p>
