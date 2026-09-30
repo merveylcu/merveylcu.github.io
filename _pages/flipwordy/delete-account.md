@@ -25,7 +25,7 @@ subtitle_fr: Comment supprimer votre compte FlipWordy.
   <li data-i18n="delete.step4">Confirm the deletion request.</li>
 </ol>
 
-<p data-i18n="delete.after">After confirmation, FlipWordy deletes the locally stored records linked to your current app account, including saved word status, daily progress, user preferences, and local profile data stored by the app.</p>
+<p data-i18n="delete.after">After confirmation, FlipWordy permanently deletes the records linked to your current app account on this device, including saved words, learned progress, streak, daily progress, user preferences, and local profile data stored by the app.</p>
 
 <h2 data-i18n="delete.section2">Important notes</h2>
 
@@ -39,4 +39,4 @@ subtitle_fr: Comment supprimer votre compte FlipWordy.
 
 <p data-i18n-html="delete.help">If you cannot access the app and need deletion assistance, contact: <a href="mailto:flipwordy@gmail.com">flipwordy@gmail.com</a>.</p>
 
-<p><strong data-i18n="delete.updatedLabel">Last updated:</strong> <span>April 4, 2026</span></p>
+<p><strong data-i18n="delete.updatedLabel">Last updated:</strong> <span>October 1, 2026</span></p>

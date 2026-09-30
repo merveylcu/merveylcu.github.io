@@ -33,8 +33,8 @@ subtitle_fr: Règles d'utilisation de FlipWordy.
 </ul>
 
 <h2 data-i18n="terms.section5">5. Ads and paid features</h2>
-<p data-i18n="terms.ads1">FlipWordy may display ads, including banner, interstitial, and rewarded formats. The app may also offer monthly or yearly subscriptions that remove ads while active.</p>
-<p data-i18n="terms.ads2">All purchases, renewals, cancellations, refunds, and billing-related terms are handled by Google Play or the App Store and are subject to their respective policies.</p>
+<p data-i18n="terms.ads1">FlipWordy may display ads, including banner, interstitial, and rewarded formats. The app may also offer monthly or yearly Premium subscriptions that unlock advanced words and remove ads while active.</p>
+<p data-i18n="terms.ads2">Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. All purchases, renewals, cancellations, refunds, and billing-related terms are handled by Google Play or the App Store and are subject to their respective policies.</p>
 
 <h2 data-i18n="terms.section6">6. Availability and changes</h2>
 <p data-i18n="terms.availability">We may change, suspend, or discontinue parts of FlipWordy at any time, including features, ads, learning content, or subscription offerings. We do not guarantee that the app will be available at all times or on all devices.</p>
@@ -52,4 +52,4 @@ subtitle_fr: Règles d'utilisation de FlipWordy.
 <p data-i18n-html="terms.contact">For legal or support questions, contact: <a href="mailto:flipwordy@gmail.com">flipwordy@gmail.com</a>.</p>
 
 <p><strong data-i18n="terms.developerLabel">Developer:</strong> <span data-i18n="terms.developerName">Merve Pekyürek</span><br>
-<strong data-i18n="terms.effectiveLabel">Effective date:</strong> <span>April 4, 2026</span></p>
+<strong data-i18n="terms.effectiveLabel">Effective date:</strong> <span>October 1, 2026</span></p>

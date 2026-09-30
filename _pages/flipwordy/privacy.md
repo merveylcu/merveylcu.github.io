@@ -30,8 +30,8 @@ subtitle_fr: Comment FlipWordy traite vos données.
   <li data-i18n="privacy.collect2">Guest session data when you continue without creating a linked account.</li>
   <li data-i18n="privacy.collect3">Learning data such as daily progress, saved words, word interaction history, selected difficulty, language preferences, and daily goal settings.</li>
   <li data-i18n="privacy.collect4">App preferences such as notification preferences, reminder time, weekend reminder settings, and widget-related display preferences.</li>
-  <li data-i18n="privacy.collect5">Purchase and subscription status needed to determine whether ads should be removed for a monthly or yearly subscription.</li>
-  <li data-i18n="privacy.collect6">Advertising and consent information used by Google AdMob and Google User Messaging Platform, including ad request and consent status data.</li>
+  <li data-i18n="privacy.collect5">Purchase and subscription status needed to unlock Premium features, such as advanced C1–C2 words and ad-free use, for a monthly or yearly subscription.</li>
+  <li data-i18n="privacy.collect6">Advertising and consent information used by Google AdMob and Google User Messaging Platform, including ad request and consent status data, and on iPhone and iPad your App Tracking Transparency choice.</li>
   <li data-i18n="privacy.collect7">Basic technical information that may be collected automatically by third-party services, such as device identifiers, app instance data, approximate diagnostics, and interaction signals needed to serve ads or prevent abuse.</li>
 </ul>
 
@@ -42,7 +42,7 @@ subtitle_fr: Comment FlipWordy traite vos données.
   <li data-i18n="privacy.use2">To personalize vocabulary learning and remember your progress and saved content.</li>
   <li data-i18n="privacy.use3">To send daily reminder notifications if you enable them.</li>
   <li data-i18n="privacy.use4">To support home screen widgets and in-app reminder flows.</li>
-  <li data-i18n="privacy.use5">To show ads, limit ad frequency, record ad consent status, and honor your ad-removal subscription.</li>
+  <li data-i18n="privacy.use5">To show ads, limit ad frequency, record ad consent status, and honor your Premium subscription.</li>
   <li data-i18n="privacy.use6">To maintain app security, diagnose problems, and improve stability.</li>
 </ul>
 
@@ -56,18 +56,19 @@ subtitle_fr: Comment FlipWordy traite vos données.
   <li>Google AdMob</li>
   <li data-i18n="privacy.thirdParty4">Google User Messaging Platform for consent collection</li>
   <li>Google Play Billing</li>
+  <li>App Store (StoreKit)</li>
 </ul>
 
 <p data-i18n="privacy.thirdPartyBody">These services may collect device, network, consent, purchase, and usage information as necessary to provide authentication, advertising, billing, fraud prevention, and related platform features.</p>
 
 <h2 data-i18n="privacy.section5">5. Ads and subscriptions</h2>
 
-<p data-i18n="privacy.ads1">FlipWordy may display banner, interstitial, and rewarded ads. If available in your region, you may also see a consent form asking whether you agree to certain types of personalized advertising.</p>
-<p data-i18n="privacy.ads2">If you purchase a "Remove Ads" subscription, FlipWordy stores the subscription state needed to disable ads while the subscription is active.</p>
+<p data-i18n="privacy.ads1">FlipWordy may display banner, interstitial, and rewarded ads. If available in your region, you may also see a consent form asking whether you agree to certain types of personalized advertising. On iPhone and iPad, FlipWordy asks for permission through Apple's App Tracking Transparency; if you decline, your device's advertising identifier is not shared for personalized ads.</p>
+<p data-i18n="privacy.ads2">If you purchase a Premium subscription, FlipWordy stores the subscription state needed to unlock advanced words and disable ads while the subscription is active.</p>
 
-<h2 data-i18n="privacy.section6">6. Notifications and widgets</h2>
+<h2 data-i18n="privacy.section6">6. Notifications, widgets, and Apple Watch</h2>
 
-<p data-i18n="privacy.notifications">If you enable notifications, FlipWordy may schedule reminder notifications using your selected reminder settings. If you add a FlipWordy widget, the app may store local widget configuration and refresh widget content to display words on your home screen.</p>
+<p data-i18n="privacy.notifications">If you enable notifications, FlipWordy may schedule reminder notifications using your selected reminder settings. If you add a FlipWordy widget, the app may store local widget configuration and refresh widget content to display words on your Home Screen or Lock Screen. If you use the FlipWordy Apple Watch app, your learning progress, saved words, and related preferences are synced directly between your iPhone and your paired Apple Watch.</p>
 
 <h2 data-i18n="privacy.section7">7. Data retention</h2>
 
@@ -90,4 +91,4 @@ subtitle_fr: Comment FlipWordy traite vos données.
 
 <p data-i18n="privacy.changes">We may update this Privacy Policy from time to time. The latest version will always be posted on this page with an updated effective date.</p>
 
-<p><strong data-i18n="privacy.effectiveLabel">Effective date:</strong> <span>April 4, 2026</span></p>
+<p><strong data-i18n="privacy.effectiveLabel">Effective date:</strong> <span>October 1, 2026</span></p>

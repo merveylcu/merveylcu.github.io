@@ -33,10 +33,11 @@ subtitle_fr: Besoin d'aide avec FlipWordy ?
 <h2 data-i18n="support.commonTitle">Common topics</h2>
 
 <ul>
-  <li data-i18n-html="support.common1"><strong>Subscription management:</strong> Restore and cancellation questions are handled through Google Play or the App Store.</li>
+  <li data-i18n-html="support.common1"><strong>Subscription management:</strong> You can restore an existing Premium subscription from the Profile screen with <strong>Restore purchases</strong>. Cancellations and refunds are handled through Google Play or the App Store.</li>
   <li data-i18n-html="support.common2"><strong>Notifications:</strong> Notification and reminder issues may depend on device-level notification settings.</li>
-  <li data-i18n-html="support.common3"><strong>Widget issues:</strong> May require removing and re-adding the widget after an app update.</li>
+  <li data-i18n-html="support.common3"><strong>Widget issues:</strong> Home Screen or Lock Screen widgets may need to be removed and re-added after an app update.</li>
   <li data-i18n-html="support.common4"><strong>Account deletion:</strong> Can be initiated inside the app from the Profile screen. See the <a href="/flipwordy/delete-account">Delete Account</a> page for details.</li>
+  <li data-i18n-html="support.common5"><strong>Apple Watch:</strong> Keep FlipWordy installed on your paired iPhone. Progress and saved words sync automatically when both devices are connected.</li>
 </ul>
 
-<p><strong data-i18n="support.updatedLabel">Last updated:</strong> <span>April 4, 2026</span></p>
+<p><strong data-i18n="support.updatedLabel">Last updated:</strong> <span>October 1, 2026</span></p>
