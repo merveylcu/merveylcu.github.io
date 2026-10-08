@@ -33,6 +33,7 @@ subtitle_fr: Comment FlipWordy traite vos données.
   <li data-i18n="privacy.collect5">Purchase and subscription status needed to unlock Premium features, such as advanced C1–C2 words and ad-free use, for a monthly or yearly subscription.</li>
   <li data-i18n="privacy.collect6">Advertising and consent information used by Google AdMob and Google User Messaging Platform, including ad request and consent status data, and on iPhone and iPad your App Tracking Transparency choice.</li>
   <li data-i18n="privacy.collect7">Basic technical information that may be collected automatically by third-party services, such as device identifiers, app instance data, approximate diagnostics, and interaction signals needed to serve ads or prevent abuse.</li>
+  <li data-i18n="privacy.collect8">Crash reports collected through Firebase Crashlytics on iPhone and iPad, such as the crash stack trace, device model, operating system version, app version, and a random installation identifier. Crash reports are not linked to your account and are not used for advertising.</li>
 </ul>
 
 <h2 data-i18n="privacy.section3">3. How we use information</h2>
@@ -57,9 +58,10 @@ subtitle_fr: Comment FlipWordy traite vos données.
   <li data-i18n="privacy.thirdParty4">Google User Messaging Platform for consent collection</li>
   <li>Google Play Billing</li>
   <li>App Store (StoreKit)</li>
+  <li data-i18n="privacy.thirdParty7">Firebase Crashlytics (Google) for crash reporting</li>
 </ul>
 
-<p data-i18n="privacy.thirdPartyBody">These services may collect device, network, consent, purchase, and usage information as necessary to provide authentication, advertising, billing, fraud prevention, and related platform features.</p>
+<p data-i18n="privacy.thirdPartyBody">These services may collect device, network, consent, purchase, and usage information as necessary to provide authentication, advertising, billing, crash reporting, fraud prevention, and related platform features.</p>
 
 <h2 data-i18n="privacy.section5">5. Ads and subscriptions</h2>
 
@@ -91,4 +93,4 @@ subtitle_fr: Comment FlipWordy traite vos données.
 
 <p data-i18n="privacy.changes">We may update this Privacy Policy from time to time. The latest version will always be posted on this page with an updated effective date.</p>
 
-<p><strong data-i18n="privacy.effectiveLabel">Effective date:</strong> <span>October 1, 2026</span></p>
+<p><strong data-i18n="privacy.effectiveLabel">Effective date:</strong> <span>October 9, 2026</span></p>
