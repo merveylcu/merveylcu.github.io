@@ -31,9 +31,9 @@ subtitle_fr: Comment FlipWordy traite vos données.
   <li data-i18n="privacy.collect3">Learning data such as daily progress, saved words, word interaction history, selected difficulty, language preferences, and daily goal settings.</li>
   <li data-i18n="privacy.collect4">App preferences such as notification preferences, reminder time, weekend reminder settings, and widget-related display preferences.</li>
   <li data-i18n="privacy.collect5">Purchase and subscription status needed to unlock Premium features, such as advanced C1–C2 words and ad-free use, for a monthly or yearly subscription.</li>
-  <li data-i18n="privacy.collect6">Advertising and consent information used by Google AdMob and Google User Messaging Platform, including ad request and consent status data, and on iPhone and iPad your App Tracking Transparency choice.</li>
+  <li data-i18n="privacy.collect6">Advertising and consent information used by Google AdMob and Google User Messaging Platform, including ad request and consent status data, your device's advertising identifier on Android, and on iPhone and iPad your App Tracking Transparency choice.</li>
   <li data-i18n="privacy.collect7">Basic technical information that may be collected automatically by third-party services, such as device identifiers, app instance data, approximate diagnostics, and interaction signals needed to serve ads or prevent abuse.</li>
-  <li data-i18n="privacy.collect8">Crash reports collected through Firebase Crashlytics on iPhone and iPad, such as the crash stack trace, device model, operating system version, app version, and a random installation identifier. Crash reports are not linked to your account and are not used for advertising.</li>
+  <li data-i18n="privacy.collect8">Crash reports collected through Firebase Crashlytics on iPhone, iPad and Android, such as the crash stack trace, device model, operating system version, app version, and a random installation identifier. Crash reports are not linked to your account and are not used for advertising.</li>
 </ul>
 
 <h2 data-i18n="privacy.section3">3. How we use information</h2>
@@ -65,7 +65,7 @@ subtitle_fr: Comment FlipWordy traite vos données.
 
 <h2 data-i18n="privacy.section5">5. Ads and subscriptions</h2>
 
-<p data-i18n="privacy.ads1">FlipWordy may display banner, interstitial, and rewarded ads. If available in your region, you may also see a consent form asking whether you agree to certain types of personalized advertising. On iPhone and iPad, FlipWordy asks for permission through Apple's App Tracking Transparency; if you decline, your device's advertising identifier is not shared for personalized ads.</p>
+<p data-i18n="privacy.ads1">FlipWordy may display banner, interstitial, and rewarded ads. If available in your region, you may also see a consent form asking whether you agree to certain types of personalized advertising. On iPhone and iPad, FlipWordy asks for permission through Apple's App Tracking Transparency; if you decline, your device's advertising identifier is not shared for personalized ads. On Android, ads may use your device's advertising ID; you can reset or delete it, or opt out of personalized ads, in your device's Google settings.</p>
 <p data-i18n="privacy.ads2">If you purchase a Premium subscription, FlipWordy stores the subscription state needed to unlock advanced words and disable ads while the subscription is active.</p>
 
 <h2 data-i18n="privacy.section6">6. Notifications, widgets, and Apple Watch</h2>
@@ -93,4 +93,4 @@ subtitle_fr: Comment FlipWordy traite vos données.
 
 <p data-i18n="privacy.changes">We may update this Privacy Policy from time to time. The latest version will always be posted on this page with an updated effective date.</p>
 
-<p><strong data-i18n="privacy.effectiveLabel">Effective date:</strong> <span>October 9, 2026</span></p>
+<p><strong data-i18n="privacy.effectiveLabel">Effective date:</strong> <span>October 13, 2026</span></p>
