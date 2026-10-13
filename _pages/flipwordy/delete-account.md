@@ -35,8 +35,17 @@ subtitle_fr: Comment supprimer votre compte FlipWordy.
   <li data-i18n="delete.note3">If you use the app as a guest, deleting the account removes the local app records associated with that guest profile on your device.</li>
 </ul>
 
+<h2 data-i18n="delete.section4">Data retained by third parties</h2>
+
+<ul>
+  <li data-i18n="delete.retained1">FlipWordy has no server. Your app data is stored only on your device and is removed immediately when you delete your account.</li>
+  <li data-i18n="delete.retained2">Crash reports collected by Firebase Crashlytics are not linked to your account and are retained by Google for up to 90 days.</li>
+  <li data-i18n-html="delete.retained3">Advertising data is handled by Google AdMob. On Android you can reset or delete your advertising ID in <strong>Settings → Google → Ads</strong>; on iPhone and iPad you can turn off tracking in <strong>Settings → Privacy &amp; Security → Tracking</strong>.</li>
+  <li data-i18n="delete.retained4">Subscription purchase records are kept by Google Play or the App Store under their own policies.</li>
+</ul>
+
 <h2 data-i18n="delete.section3">Need help?</h2>
 
 <p data-i18n-html="delete.help">If you cannot access the app and need deletion assistance, contact: <a href="mailto:flipwordy@gmail.com">flipwordy@gmail.com</a>.</p>
 
-<p><strong data-i18n="delete.updatedLabel">Last updated:</strong> <span>October 1, 2026</span></p>
+<p><strong data-i18n="delete.updatedLabel">Last updated:</strong> <span>October 14, 2026</span></p>
