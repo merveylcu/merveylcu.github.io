@@ -115,6 +115,14 @@ ga('send', 'pageview');
                 <a class="nav-link" href="{{ site.baseurl }}/flipwordy/" data-i18n="nav.flipwordy">FlipWordy</a>
                 </li>
 
+                {% if page.url contains "/focusling" %}
+                <li class="nav-item active">
+                {% else %}
+                <li class="nav-item">
+                {% endif %}
+                <a class="nav-link" href="{{ site.baseurl }}/focusling/" data-i18n="nav.focusling">Focusling</a>
+                </li>
+
             </ul>
 
         <!-- End Menu -->
@@ -147,9 +155,10 @@ ga('send', 'pageview');
                 Copyright © {{ site.time | date: "%Y" }} {{ site.name }}
             </div>
             <div class="col-md-6 col-sm-6 text-center text-lg-right">
-                <a href="{{ site.baseurl }}/flipwordy/privacy" data-i18n="footer.privacy">Privacy</a> &nbsp;·&nbsp;
-                <a href="{{ site.baseurl }}/flipwordy/terms" data-i18n="footer.terms">Terms</a> &nbsp;·&nbsp;
-                <a href="{{ site.baseurl }}/flipwordy/support" data-i18n="footer.support">Support</a>
+                {% if page.url contains "/focusling" %}{% assign app = "focusling" %}{% else %}{% assign app = "flipwordy" %}{% endif %}
+                <a href="{{ site.baseurl }}/{{ app }}/privacy" data-i18n="footer.privacy">Privacy</a> &nbsp;·&nbsp;
+                <a href="{{ site.baseurl }}/{{ app }}/terms" data-i18n="footer.terms">Terms</a> &nbsp;·&nbsp;
+                <a href="{{ site.baseurl }}/{{ app }}/support" data-i18n="footer.support">Support</a>
             </div>
         </div>
     </div>
@@ -168,6 +177,7 @@ ga('send', 'pageview');
 
 <script src="{{ site.baseurl }}/assets/js/mediumish.js"></script>
 <script src="{{ site.baseurl }}/assets/js/flipwordy-i18n.js"></script>
+<script src="{{ site.baseurl }}/assets/js/focusling-i18n.js"></script>
 
 {% if site.lazyimages == "enabled" %}
 <script src="{{ site.baseurl }}/assets/js/lazyload.js"></script>

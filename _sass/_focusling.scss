@@ -1,0 +1,43 @@
+// ============================================================
+// Focusling — the app's pastel palette on its own pages
+// (the rest of the site keeps FlipWordy's design system)
+// ============================================================
+
+body[data-page-url^="/focusling"] {
+  --fw-primary:          #7C66D9;
+  --fw-primary-soft:     #EEE8FC;
+  --fw-primary-light:    #B9A6F2;
+  --fw-mint:             #3FAE86;
+  --fw-mint-soft:        #E3F5EC;
+  --fw-bg:               #FFF8F1;
+  --fw-text:             #2E2A3B;
+  --fw-muted:            #8A8399;
+  --fw-border:           #EFE6DC;
+  --fw-hero-text:        #2E2A3B;
+  --fw-hero-muted:       rgba(46, 42, 59, 0.84);
+  --fw-hero-shadow:      0 10px 24px rgba(124, 102, 217, 0.12);
+  --fw-hero-background:  linear-gradient(135deg, #E4F5EC 0%, #E4DCFA 100%);
+}
+
+html[data-theme="dark"] body[data-page-url^="/focusling"] {
+  --fw-primary:          #A796E0;
+  --fw-primary-soft:     #2D2645;
+  --fw-primary-light:    #4B4175;
+  --fw-mint:             #9CCDB6;
+  --fw-mint-soft:        #1F3A31;
+  --fw-bg:               #1E1A2B;
+  --fw-surface:          #2A2539;
+  --fw-surface-soft:     #312B42;
+  --fw-text:             #EDE9F5;
+  --fw-muted:            #A9A2B8;
+  --fw-border:           #3A3350;
+  --fw-hero-text:        #1E1A2B;
+  --fw-hero-muted:       rgba(30, 26, 43, 0.84);
+  --fw-hero-background:  linear-gradient(135deg, #CDEBDC 0%, #D6CBF5 100%);
+}
+
+body[data-page-url^="/focusling"] a:hover { color: #6450C2; }
+
+.fw-project-card-focusling .fw-project-card-cover {
+  background: linear-gradient(135deg, #A8E0C6 0%, #7C66D9 100%);
+}
