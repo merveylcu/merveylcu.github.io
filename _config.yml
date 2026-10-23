@@ -8,7 +8,7 @@ baseurl: ''
 google_analytics: ''
 disqus: ''
 mailchimp-list: ''
-include: ["_pages"]
+include: ["_pages", ".well-known"]
 permalink: /:title/
 
 # Authors

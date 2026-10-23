@@ -13,7 +13,7 @@ comments: false
   </div>
   <h1 data-i18n-html="hero.title">A calm focus timer,<br>with a tiny friend.</h1>
   <p class="fw-hero-lead">
-    <span data-i18n="hero.lead">Focusling is a pomodoro timer with a companion called your ling. Every focus session you finish helps it grow, from an egg to a sage. No account, no ads, no tracking: everything stays on your device.</span>
+    <span data-i18n="hero.lead">Focusling is a pomodoro timer with a companion called your ling. Every focus session you finish helps it grow, from an egg to a sage. No account, no ads, no tracking: your history stays on your device.</span>
   </p>
   <div class="fw-hero-actions">
     <a href="/focusling/support" class="fw-btn-outline" data-i18n="hero.support">Get Support</a>

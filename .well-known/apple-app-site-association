@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["NVGKH323EA.app.focusling"],
+        "components": [
+          { "/": "/focusling/join", "comment": "Focusling co-focus invites" },
+          { "/": "/focusling/join/", "comment": "Focusling co-focus invites" }
+        ]
+      }
+    ]
+  }
+}
