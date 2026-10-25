@@ -42,7 +42,7 @@ subtitle_tr: Focusling verilerinizi nasıl işler?
 <ul>
   <li data-i18n="privacy.perm1">Notifications: to show the live countdown and to tell you when a session ends.</li>
   <li data-i18n="privacy.perm2">Exact alarms (Android): so the end-of-session alert arrives on time.</li>
-  <li data-i18n="privacy.perm3">App blocking (optional, Pro): Screen Time on iPhone, and usage access plus "display over other apps" on Android. These are used only on your device to keep the apps you picked closed while you focus. The list of apps you pick is never sent anywhere.</li>
+  <li data-i18n="privacy.perm3">App blocking (optional; one app free, more with Pro): Screen Time on iPhone, and usage access plus "display over other apps" on Android. These are used only on your device to keep the apps you picked closed while you focus. The list of apps you pick is never sent anywhere.</li>
   <li data-i18n="privacy.perm4">Widgets and the Live Activity read the timer state from a storage area shared only with Focusling's own widgets.</li>
 </ul>
 
@@ -58,7 +58,7 @@ subtitle_tr: Focusling verilerinizi nasıl işler?
 
 <h2 data-i18n="privacy.sectionCoFocus">6. Focus with friends</h2>
 
-<p data-i18n="privacy.cofocus1">If you open or join a room in "Focus with friends" (part of Focusling Pro), the app connects to our room server, which runs on Cloudflare. The server receives only what the room needs:</p>
+<p data-i18n="privacy.cofocus1">If you open or join a room in "Focus with friends", the app connects to our room server, which runs on Cloudflare. The server receives only what the room needs:</p>
 <ul>
   <li data-i18n="privacy.cofocus2">The room code and a random member ID that the app makes anew for every room. It does not identify you or your device.</li>
   <li data-i18n="privacy.cofocus3">Your ling's look (growth stage, color and accessory), the focus length, when the round starts and when someone leaves it.</li>

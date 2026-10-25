@@ -36,7 +36,7 @@
       "offers.item3": "Kilit ekranında canlı geri sayım, ana ekran widget'ları, Hızlı Ayarlar kutucuğu ve Denetim Merkezi kontrolü.",
       "offers.item4": "İsteğe bağlı sıkı mod: başka bir uygulamaya geçip kısa sürede dönmezsen odak biter.",
       "offers.item5": "Bugünkü dakikalar, seri gün, toplam saat ve 7 günlük grafik.",
-      "offers.item6": "Uygulama engelleme, Pro dolap eşyaları ve çift tohum açan isteğe bağlı Focusling Pro (aylık ya da ücretsiz denemeli yıllık).",
+      "offers.item6": "Birden fazla uygulama engellemeyi, 4 arkadaşa kadar odaları ve çift tohumu açan isteğe bağlı Focusling Pro (aylık ya da ücretsiz denemeli yıllık).",
       "legal.title": "Yasal",
 
       "privacy.intro": "Focusling, kişisel verilerinizi toplamadan çalışacak şekilde tasarlandı. Bu Gizlilik Politikası, cihazınızda nelerin kaldığını, uygulamanın neleri sakladığını ve hangi platform hizmetlerinin devreye girdiğini açıklar.",
@@ -56,7 +56,7 @@
       "privacy.section4": "4. İzinler",
       "privacy.perm1": "Bildirimler: canlı geri sayımı göstermek ve oturum bitince haber vermek için.",
       "privacy.perm2": "Tam zamanlı alarmlar (Android): oturum sonu uyarısının zamanında gelmesi için.",
-      "privacy.perm3": "Uygulama engelleme (isteğe bağlı, Pro): iPhone'da Ekran Süresi, Android'de kullanım erişimi ve \"diğer uygulamaların üzerinde gösterme\". Yalnızca cihazınızda, odaklanırken seçtiğiniz uygulamaları kapalı tutmak için kullanılır. Seçtiğiniz uygulamaların listesi hiçbir yere gönderilmez.",
+      "privacy.perm3": "Uygulama engelleme (isteğe bağlı; bir uygulama ücretsiz, fazlası Pro ile): iPhone'da Ekran Süresi, Android'de kullanım erişimi ve \"diğer uygulamaların üzerinde gösterme\". Yalnızca cihazınızda, odaklanırken seçtiğiniz uygulamaları kapalı tutmak için kullanılır. Seçtiğiniz uygulamaların listesi hiçbir yere gönderilmez.",
       "privacy.perm4": "Widget'lar ve Live Activity, sayacın durumunu yalnızca Focusling'in kendi widget'larıyla paylaşılan bir depolama alanından okur.",
       "privacy.sectionHealth": "5. Apple Sağlık ve Health Connect",
       "privacy.health1": "Ayarlar'da \"Apple Sağlık'a kaydet\" ya da \"Health Connect'e kaydet\"i açarsanız Focusling, tamamladığınız her odak oturumunu bir farkındalık oturumu (başlangıç ve bitiş saati) olarak iPhone'da Apple Sağlık'a, Android'de Health Connect'e yazar. Varsayılan olarak kapalıdır ve önce izninizi ister.",
@@ -65,7 +65,7 @@
       "privacy.health4": "Focusling'in Health Connect bilgilerini kullanımı, Sınırlı Kullanım şartları dahil Health Connect İzinleri politikasına uyar. HealthKit verileri Apple'ın HealthKit yönergelerine uygun şekilde işlenir.",
       "privacy.health5": "Bunu Focusling Ayarları'ndan kapatabilir, izni Sağlık uygulamasından (Paylaşım → Uygulamalar) ya da Health Connect'ten geri alabilir ve kaydedilen dakikaları orada silebilirsiniz.",
       "privacy.sectionCoFocus": "6. Arkadaşla odaklan",
-      "privacy.cofocus1": "\"Arkadaşla odaklan\"da (Focusling Pro'nun parçası) bir oda açar ya da bir odaya katılırsanız uygulama, Cloudflare üzerinde çalışan oda sunucumuza bağlanır. Sunucu yalnızca odanın ihtiyacı olanı alır:",
+      "privacy.cofocus1": "\"Arkadaşla odaklan\"da bir oda açar ya da bir odaya katılırsanız uygulama, Cloudflare üzerinde çalışan oda sunucumuza bağlanır. Sunucu yalnızca odanın ihtiyacı olanı alır:",
       "privacy.cofocus2": "Oda kodu ve uygulamanın her oda için yeniden ürettiği rastgele bir üye kimliği. Sizi ya da cihazınızı tanımlamaz.",
       "privacy.cofocus3": "Ling'inizin görünümü (büyüme evresi, rengi ve aksesuarı), odak süresi, turun ne zaman başladığı ve birinin ne zaman bıraktığı.",
       "privacy.cofocus4": "Apple ya da Google'dan bir push bildirim token'ı; oda size bir arkadaşın katıldığını, turun başladığını, birinin bıraktığını ya da turun bittiğini haber verebilsin diye.",
@@ -135,7 +135,7 @@
       "join.how1": "Focusling'i iPhone'una ya da Android telefonuna yükle.",
       "join.how2": "Davet bağlantısını yeniden aç ya da Odak'ta \"Arkadaşla odaklan\"a dokunup oda kodunu gir.",
       "join.how3": "Ev sahibi turu başlatana kadar odada bekle.",
-      "join.pro": "Arkadaşla odaklanma Focusling Pro'nun bir parçası.",
+      "join.pro": "Odaya katılmak ücretsiz. Odalar 2 kişilik; Focusling Pro'su olan bir host 4 kişiye kadar ağırlayabilir.",
       "join.more": "Focusling hakkında daha fazlası"
     }
   };

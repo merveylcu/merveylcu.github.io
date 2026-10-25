@@ -32,7 +32,7 @@ subtitle_tr: Bir arkadaşın seni bir Focusling odasına davet etti.
   <li data-i18n="join.how3">Wait in the room until the host starts the round.</li>
 </ol>
 
-<p data-i18n="join.pro">Focusing with friends is part of Focusling Pro.</p>
+<p data-i18n="join.pro">Joining a room is free. Rooms are for two; a host with Focusling Pro can bring up to 4.</p>
 
 <p><a href="/focusling/" data-i18n="join.more">More about Focusling</a></p>
 

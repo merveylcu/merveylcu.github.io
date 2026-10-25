@@ -56,7 +56,7 @@ comments: false
     <li data-i18n="offers.item3">A live countdown on the lock screen, home-screen widgets, a Quick Settings tile and a Control Center control.</li>
     <li data-i18n="offers.item4">An optional strict mode: leaving for another app ends the focus after a short grace period.</li>
     <li data-i18n="offers.item5">Today's minutes, your day streak, total hours and a 7-day chart.</li>
-    <li data-i18n="offers.item6">An optional Focusling Pro (monthly, or yearly with a free trial) that unlocks app blocking, Pro wardrobe items and double seeds.</li>
+    <li data-i18n="offers.item6">An optional Focusling Pro (monthly, or yearly with a free trial) that lets you block more than one app, host rooms for up to 4 friends and earn double seeds.</li>
   </ul>
 </div>
 
