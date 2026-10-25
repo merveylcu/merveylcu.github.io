@@ -36,7 +36,7 @@
       "offers.item3": "Kilit ekranında canlı geri sayım, ana ekran widget'ları, Hızlı Ayarlar kutucuğu ve Denetim Merkezi kontrolü.",
       "offers.item4": "İsteğe bağlı sıkı mod: başka bir uygulamaya geçip kısa sürede dönmezsen odak biter.",
       "offers.item5": "Bugünkü dakikalar, seri gün, toplam saat ve 7 günlük grafik.",
-      "offers.item6": "Uygulama engelleme, Pro dolap eşyaları ve çift tohum açan isteğe bağlı Focusling Pro (aylık, ücretsiz denemeli yıllık ya da ömür boyu).",
+      "offers.item6": "Uygulama engelleme, Pro dolap eşyaları ve çift tohum açan isteğe bağlı Focusling Pro (aylık ya da ücretsiz denemeli yıllık).",
       "legal.title": "Yasal",
 
       "privacy.intro": "Focusling, kişisel verilerinizi toplamadan çalışacak şekilde tasarlandı. Bu Gizlilik Politikası, cihazınızda nelerin kaldığını, uygulamanın neleri sakladığını ve hangi platform hizmetlerinin devreye girdiğini açıklar.",
@@ -95,7 +95,7 @@
       "terms.use1": "Uygulamayı kötüye kullanmayın, tersine mühendislik yapmayın, işleyişini bozmayın ya da satın alma kontrollerini aşmaya çalışmayın.",
       "terms.use2": "Focusling'i yürürlükteki yasaları veya üçüncü kişilerin haklarını ihlal edecek şekilde kullanmayın.",
       "terms.section4": "4. Focusling Pro",
-      "terms.pro1": "Focusling Pro isteğe bağlıdır. Aylık abonelik, uygun yeni aboneler için ücretsiz denemeli yıllık abonelik ya da tek seferlik ömür boyu satın alma olarak sunulur. Fiyatlar satın almadan önce uygulamada ve mağazada gösterilir.",
+      "terms.pro1": "Focusling Pro isteğe bağlıdır. Aylık abonelik ya da uygun yeni aboneler için ücretsiz denemeli yıllık abonelik olarak sunulur. Fiyatlar satın almadan önce uygulamada ve mağazada gösterilir.",
       "terms.pro2": "Abonelikler, mevcut dönemin bitiminden en az 24 saat önce iptal edilmediği sürece otomatik olarak yenilenir. Yenileme ücreti dönem bitmeden önceki 24 saat içinde hesabınızdan alınır. Ücretsiz deneme sırasında iptal ederseniz ücret alınmaz. Aboneliklerinizi App Store veya Google Play hesap ayarlarınızdan yönetebilir ya da iptal edebilirsiniz.",
       "terms.pro3": "Ödemeler, yenilemeler, iptaller ve iadeler Apple veya Google tarafından yürütülür ve onların politikalarına tabidir. Önceki satın alımlarınızı paywall'daki \"Satın alımları geri yükle\" ile geri yükleyebilirsiniz.",
       "terms.section5": "5. Verileriniz",

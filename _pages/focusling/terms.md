@@ -27,7 +27,7 @@ subtitle_tr: Focusling kullanım kuralları.
 </ul>
 
 <h2 data-i18n="terms.section4">4. Focusling Pro</h2>
-<p data-i18n="terms.pro1">Focusling Pro is optional. It is offered as a monthly subscription, a yearly subscription with a free trial for eligible new subscribers, or a one-time lifetime purchase. Prices are shown in the app and in the store before you buy.</p>
+<p data-i18n="terms.pro1">Focusling Pro is optional. It is offered as a monthly subscription or a yearly subscription with a free trial for eligible new subscribers. Prices are shown in the app and in the store before you buy.</p>
 <p data-i18n="terms.pro2">Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Your account is charged for renewal within 24 hours before the period ends. If you cancel during the free trial, you will not be charged. You can manage or cancel subscriptions in your App Store or Google Play account settings.</p>
 <p data-i18n="terms.pro3">Payments, renewals, cancellations and refunds are handled by Apple or Google and are subject to their policies. You can restore earlier purchases from the paywall with "Restore purchases".</p>
 
