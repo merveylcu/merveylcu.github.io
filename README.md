@@ -14,6 +14,9 @@ Merveylcu GitHub Pages sitesi. Ana sayfa kişisel profil alanını, `FlipWordy` 
 | Terms of Use | `/flipwordy/terms` |
 | Support | `/flipwordy/support` |
 | Delete Account | `/flipwordy/delete-account` |
+| Dracora | `/dracora/` |
+| Dracora Privacy Policy | `/dracora/privacy` |
+| Dracora Support | `/dracora/support` |
 
 ## Özellikler
 
@@ -34,3 +37,7 @@ Yerel geliştirmede ana sayfa: `http://localhost:4000/`
 ## Tema
 
 [Mediumish Jekyll Theme](https://github.com/wowthemesnet/mediumish-theme-jekyll) — MIT License
+
+## İkonlar
+
+[Feather Icons](https://github.com/feathericons/feather) — MIT License, Copyright (c) 2013-2023 Cole Bemis

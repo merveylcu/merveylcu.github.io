@@ -1,0 +1,66 @@
+// ============================================================
+// Dracora — the app's palette on its own pages
+// (the rest of the site keeps FlipWordy's design system)
+//
+// Values come from Dracora's docs/spec/design-system.md:
+//   Butter #FFF1B5, Peach #FFD6C2, Mint #B8F2E6, Ice #D7F9F8,
+//   BackgroundLight #F8F6F2, BackgroundDark #17212B,
+//   FlameCore #FFE08A, FlameOuter #FFA86B.
+// Pastels are too light for text, so text and link colors use the
+// app's ink and surface values from its DracoraColors theme file
+// (#263241 / #5E6B7A light, #F1EEE8 / #A9B4C2 dark).
+// The font is inherited from the site, not Nunito.
+// ============================================================
+
+body[data-page-url^="/dracora"] {
+  --fw-primary:          #263241;
+  --fw-primary-soft:     #FFF1B5;
+  --fw-primary-light:    #FFD6C2;
+  --fw-mint:             #B8F2E6;
+  --fw-mint-soft:        #D7F9F8;
+  --fw-bg:               #F8F6F2;
+  --fw-surface-soft:     #F1EEE8;
+  --fw-mint-ink:         #1F6F63;
+  --fw-yellow-soft:      #FFE08A;
+  --fw-yellow-ink:       #8A5A00;
+  --fw-text:             #263241;
+  --fw-muted:            #5E6B7A;
+  --fw-border:           #E3DED5;
+  --fw-hero-text:        #263241;
+  --fw-hero-muted:       rgba(38, 50, 65, 0.84);
+  --fw-hero-shadow:      0 10px 24px rgba(255, 168, 107, 0.2);
+  --fw-hero-background:  linear-gradient(135deg, #FFF1B5 0%, #FFD6C2 100%);
+}
+
+html[data-theme="dark"] body[data-page-url^="/dracora"] {
+  --fw-primary:          #FFF1B5;
+  --fw-primary-soft:     #2B3A4A;
+  --fw-primary-light:    #33424F;
+  --fw-mint:             #B8F2E6;
+  --fw-mint-soft:        #2B3A4A;
+  --fw-mint-ink:         #B8F2E6;
+  --fw-yellow-soft:      #2B3A4A;
+  --fw-yellow-ink:       #FFE08A;
+  --fw-bg:               #17212B;
+  --fw-surface:          #212D3A;
+  --fw-surface-soft:     #2B3A4A;
+  --fw-text:             #F1EEE8;
+  --fw-muted:            #A9B4C2;
+  --fw-border:           #33424F;
+  --fw-hero-text:        #263241;
+  --fw-hero-muted:       rgba(38, 50, 65, 0.84);
+  --fw-hero-background:  linear-gradient(135deg, #FFF1B5 0%, #FFD6C2 100%);
+}
+
+// Card icons: FlipWordy hardcodes the yellow card colors and uses the pastel
+// mint as an icon color, which vanishes on the Ice background. Use ink tokens.
+// (Contrast: mint ink on Ice 5.35, yellow ink on FlameCore 4.6+, dark mode 9+.)
+body[data-page-url^="/dracora"] .fw-card-icon-mint   { color: var(--fw-mint-ink); }
+body[data-page-url^="/dracora"] .fw-card-icon-yellow { background: var(--fw-yellow-soft); color: var(--fw-yellow-ink); }
+
+body[data-page-url^="/dracora"] a:hover { color: #5E6B7A; }
+html[data-theme="dark"] body[data-page-url^="/dracora"] a:hover { color: #FFE08A; }
+
+.fw-project-card-dracora .fw-project-card-cover {
+  background: linear-gradient(135deg, #FFE08A 0%, #FFA86B 100%);
+}
