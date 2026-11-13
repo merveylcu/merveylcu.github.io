@@ -4,6 +4,7 @@ title: "merveylcu"
 description: "Mobile developer building apps for Android & iOS."
 logo: 'assets/images/ic_app_logo.webp'
 favicon: 'assets/images/ic_app_logo.webp'
+url: "https://merveylcu.github.io"   # absolute og:image URLs in link previews
 baseurl: ''
 google_analytics: ''
 disqus: ''
@@ -58,3 +59,14 @@ adsense-data-ad-slot: "1363087678"
 lazyimages: "disabled"
 
 exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
+
+# Link previews (og:image / twitter:image via jekyll-seo-tag) show each app's own icon.
+defaults:
+  - scope:
+      path: "_pages/focusling"
+    values:
+      image: /assets/images/focusling_logo.png
+  - scope:
+      path: "_pages/dracora"
+    values:
+      image: /assets/images/dracora_logo.png

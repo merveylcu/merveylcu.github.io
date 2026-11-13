@@ -21,7 +21,7 @@ subtitle_tr: Focusling verilerinizi nasıl işler?
 
 <h2 data-i18n="privacy.section2">2. Data we collect</h2>
 
-<p data-i18n="privacy.none">We do not collect any personal data. Focusling has no account, no advertising and no analytics or crash-reporting services. We cannot see how you use the app. Something leaves your device only when you focus with friends (section 6) and, on iPhone, to end the Live Activity on time (section 7), and then only what that needs.</p>
+<p data-i18n="privacy.none">We do not collect any personal data. Focusling has no account, no advertising and no analytics. We cannot see how you use the app. Something leaves your device only when you focus with friends (section 6), on iPhone to end the Live Activity on time (section 7), and when the app crashes (section 8), and then only what that needs.</p>
 
 <h2 data-i18n="privacy.section3">3. Data stored on your device</h2>
 
@@ -72,16 +72,21 @@ subtitle_tr: Focusling verilerinizi nasıl işler?
 <p data-i18n="privacy.live1">On iPhone, the countdown on the Lock Screen and in the Dynamic Island is a Live Activity. iOS doesn't let a suspended app close it when a focus or break ends, so the app tells the same server (on Cloudflare) when the current session ends, and the server asks Apple to close the Live Activity at that moment. It receives only the Live Activity's push token from Apple, the session's end time and the card's final text without your task name.</p>
 <p data-i18n="privacy.live2">Pausing, skipping or stopping cancels it. Nothing is kept after the session ends, and it isn't linked to you, used for advertising, sold or shared. You can turn off Live Activities for Focusling in the iPhone's Settings; the app then sends nothing.</p>
 
-<h2 data-i18n="privacy.section5">8. Purchases</h2>
+<h2 data-i18n="privacy.sectionCrash">8. Crash reports</h2>
+
+<p data-i18n="privacy.crash1">If the app crashes, Focusling sends a crash report to Firebase Crashlytics (Google) so we can fix the bug. A report contains the technical details of the crash (where in the code it happened), the app version, the device model and operating system version, and a random installation identifier that Firebase creates for the app. It contains no name, account, task names or focus history.</p>
+<p data-i18n="privacy.crash2">Crash reports are used only to fix crashes. They aren't linked to you, used for advertising, sold or shared, and Firebase keeps them for 90 days. Firebase Analytics is turned off.</p>
+
+<h2 data-i18n="privacy.section5">9. Purchases</h2>
 
 <p data-i18n="privacy.purchases1">Focusling Pro is sold through the App Store and Google Play. Payment, billing and your purchase history are handled entirely by Apple or Google under their own privacy policies; we never receive your payment details.</p>
 <p data-i18n="privacy.purchases2">The app checks with the store on your device whether Pro is active. Google Play's billing services may process purchase and device information as described in Google's privacy policy.</p>
 
-<h2 data-i18n="privacy.section6">9. Children</h2>
+<h2 data-i18n="privacy.section6">10. Children</h2>
 
 <p data-i18n="privacy.children">Focusling does not collect personal data from anyone, including children. In-app purchases are subject to the parental controls of the App Store and Google Play.</p>
 
-<h2 data-i18n="privacy.section7">10. Your choices</h2>
+<h2 data-i18n="privacy.section7">11. Your choices</h2>
 
 <ul>
   <li data-i18n="privacy.choice1">You can turn off notifications, app blocking and saving to Apple Health or Health Connect in the app or in your device settings.</li>
@@ -91,8 +96,8 @@ subtitle_tr: Focusling verilerinizi nasıl işler?
   <li data-i18n="privacy.choice3">You can delete all your Focusling data by deleting the app.</li>
 </ul>
 
-<h2 data-i18n="privacy.section8">11. Changes to this policy</h2>
+<h2 data-i18n="privacy.section8">12. Changes to this policy</h2>
 
 <p data-i18n="privacy.changes">If Focusling's handling of data changes, we will update this page with a new effective date.</p>
 
-<p><strong data-i18n="privacy.effectiveLabel">Effective date:</strong> <span data-i18n="privacy.effectiveDate">October 25, 2026</span></p>
+<p><strong data-i18n="privacy.effectiveLabel">Effective date:</strong> <span data-i18n="privacy.effectiveDate">November 12, 2026</span></p>

@@ -29,7 +29,15 @@
   })();
 </script>
 
-<link rel="icon" href="{{ site.baseurl }}/assets/images/ic_app_logo.webp">
+{% comment %} Each app's pages (/focusling/..., /dracora/...) use that app's icon, so shared links don't show FlipWordy's. {% endcomment %}
+{% assign url_app = page.url | split: '/' | where_exp: "s", "s != ''" | first %}
+{% if url_app == 'focusling' or url_app == 'dracora' %}
+  {% assign app_icon = '/assets/images/' | append: url_app | append: '_logo.png' %}
+{% else %}
+  {% assign app_icon = '/assets/images/ic_app_logo.webp' %}
+{% endif %}
+<link rel="icon" href="{{ site.baseurl }}{{ app_icon }}">
+<link rel="apple-touch-icon" href="{{ site.baseurl }}{{ app_icon }}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
