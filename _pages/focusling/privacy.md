@@ -77,16 +77,21 @@ subtitle_tr: Focusling verilerinizi nasıl işler?
 <p data-i18n="privacy.crash1">If the app crashes, Focusling sends a crash report to Firebase Crashlytics (Google) so we can fix the bug. A report contains the technical details of the crash (where in the code it happened), the app version, the device model and operating system version, and a random installation identifier that Firebase creates for the app. It contains no name, account, task names or focus history.</p>
 <p data-i18n="privacy.crash2">Crash reports are used only to fix crashes. They aren't linked to you, used for advertising, sold or shared, and Firebase keeps them for 90 days. Firebase Analytics is turned off.</p>
 
-<h2 data-i18n="privacy.section5">9. Purchases</h2>
+<h2 data-i18n="privacy.sectionWatch">9. Smartwatch</h2>
+
+<p data-i18n="privacy.watch1">If you use the Focusling app on an Apple Watch or a Wear OS watch, your phone sends it the timer's state, your ling's picture and your session lengths, and the watch sends back the buttons you press and the lengths you set. This goes between your own devices through Apple's or Google's watch connection (the system services that link a watch to its phone); it is never sent to us.</p>
+<p data-i18n="privacy.watch2">The watch keeps only the latest state, to show it in the app and on the watch face. Nothing is used for advertising, sold or shared, and removing the app from the watch deletes it.</p>
+
+<h2 data-i18n="privacy.section5">10. Purchases</h2>
 
 <p data-i18n="privacy.purchases1">Focusling Pro is sold through the App Store and Google Play. Payment, billing and your purchase history are handled entirely by Apple or Google under their own privacy policies; we never receive your payment details.</p>
 <p data-i18n="privacy.purchases2">The app checks with the store on your device whether Pro is active. Google Play's billing services may process purchase and device information as described in Google's privacy policy.</p>
 
-<h2 data-i18n="privacy.section6">10. Children</h2>
+<h2 data-i18n="privacy.section6">11. Children</h2>
 
 <p data-i18n="privacy.children">Focusling does not collect personal data from anyone, including children. In-app purchases are subject to the parental controls of the App Store and Google Play.</p>
 
-<h2 data-i18n="privacy.section7">11. Your choices</h2>
+<h2 data-i18n="privacy.section7">12. Your choices</h2>
 
 <ul>
   <li data-i18n="privacy.choice1">You can turn off notifications, app blocking and saving to Apple Health or Health Connect in the app or in your device settings.</li>
@@ -96,8 +101,8 @@ subtitle_tr: Focusling verilerinizi nasıl işler?
   <li data-i18n="privacy.choice3">You can delete all your Focusling data by deleting the app.</li>
 </ul>
 
-<h2 data-i18n="privacy.section8">12. Changes to this policy</h2>
+<h2 data-i18n="privacy.section8">13. Changes to this policy</h2>
 
 <p data-i18n="privacy.changes">If Focusling's handling of data changes, we will update this page with a new effective date.</p>
 
-<p><strong data-i18n="privacy.effectiveLabel">Effective date:</strong> <span data-i18n="privacy.effectiveDate">November 12, 2026</span></p>
+<p><strong data-i18n="privacy.effectiveLabel">Effective date:</strong> <span data-i18n="privacy.effectiveDate">November 20, 2026</span></p>
